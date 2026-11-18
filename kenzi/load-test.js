@@ -29,7 +29,7 @@ export default function () {
       recordMetrics(res, endpoint.name, passed);
     });
 
-    sleep(1);
+    // sleep(1);
   }
 }
 
