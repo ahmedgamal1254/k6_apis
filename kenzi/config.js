@@ -1,4 +1,4 @@
-export const BASE_URL = __ENV.BASE_URL || 'http://localhost:5180';
+export const BASE_URL = __ENV.BASE_URL || 'http://72.60.37.10:8090';
 
 // Public Kenzi API endpoints (no login / [AllowAnonymous])
 export const PUBLIC_ENDPOINTS = [
