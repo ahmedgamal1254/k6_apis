@@ -57,8 +57,9 @@ export const LOAD_STAGES = [
   { duration: '3m', target: 50 },  // Hold 50 VUs (steady load)
   { duration: '3m', target: 100 }, // Ramp up to 100 VUs
   { duration: '3m', target: 100 }, // Hold 100 VUs (steady load)
-  { duration: '5m', target: 150 },
+  { duration: '5m', target: 150 }, 
   { duration: '5m', target: 200},
+  { duration: '5m', target: 250},
   { duration: '1m', target: 10},
   { duration: '30s', target: 0 },  // Ramp down to 0 VUs
 ];
