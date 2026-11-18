@@ -1,4 +1,30 @@
-export const BASE_URL = __ENV.BASE_URL || 'http://72.60.37.10:8090';
+function loadEnv() {
+  const env = {};
+  try {
+    const raw = open('./.env');
+    for (const line of raw.split(/\r?\n/)) {
+      const trimmed = line.trim();
+      if (!trimmed || trimmed.startsWith('#')) continue;
+      const eqIdx = trimmed.indexOf('=');
+      if (eqIdx === -1) continue;
+      const key = trimmed.slice(0, eqIdx).trim();
+      let val = trimmed.slice(eqIdx + 1).trim();
+      if (
+        (val.startsWith('"') && val.endsWith('"')) ||
+        (val.startsWith("'") && val.endsWith("'"))
+      ) {
+        val = val.slice(1, -1);
+      }
+      env[key] = val;
+    }
+  } catch (_) {
+    // .env is optional; fall back to __ENV or default
+  }
+  return env;
+}
+
+const dotEnv = loadEnv();
+export const BASE_URL = __ENV.BASE_URL || dotEnv.BASE_URL || 'http://localhost:5180';
 
 // Public Kenzi API endpoints (no login / [AllowAnonymous])
 export const PUBLIC_ENDPOINTS = [

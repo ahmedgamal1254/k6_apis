@@ -34,7 +34,7 @@ export default function () {
 
 export function handleSummary(data) {
   return {
-    'results/load-summary.json': JSON.stringify(data, null, 2),
+    'kenzi-load-summary.json': JSON.stringify(data, null, 2),
     stdout: textSummary(data),
   };
 }
