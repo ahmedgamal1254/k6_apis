@@ -1,12 +1,26 @@
-export const BASE_URL = __ENV.BASE_URL || 'http://localhost:3000';
+export const BASE_URL = __ENV.BASE_URL || 'http://localhost:5180';
 
-// Public endpoints that do not require authentication/login
+// Public Kenzi API endpoints (no login / [AllowAnonymous])
 export const PUBLIC_ENDPOINTS = [
-  { name: 'home', path: '/' },
   { name: 'health', path: '/health' },
-  // Add your public Kenzi routes/API endpoints below:
-  // { name: 'products', path: '/api/public/products' },
-  // { name: 'categories', path: '/api/public/categories' },
+  { name: 'home', path: '/api/home' },
+  { name: 'trusted_users', path: '/api/home/trusted-users' },
+  { name: 'landing', path: '/api/landing' },
+  { name: 'app_center_settings', path: '/api/app/settings/center' },
+  { name: 'app_gallery', path: '/api/app/gallery' },
+  { name: 'app_reels', path: '/api/app/reels' },
+  { name: 'services', path: '/api/services' },
+  { name: 'catalog_departments', path: '/api/catalog/departments' },
+  { name: 'catalog_categories', path: '/api/catalog/categories' },
+  { name: 'catalog_services', path: '/api/catalog/services' },
+  { name: 'catalog_search', path: '/api/catalog/search' },
+  { name: 'packages', path: '/api/packages' },
+  { name: 'suggested', path: '/api/suggested' },
+  { name: 'specialists', path: '/api/specialists' },
+  { name: 'about', path: '/api/about' },
+  { name: 'terms_and_conditions', path: '/api/terms-and-conditions' },
+  { name: 'app_config', path: '/api/config' },
+  { name: 'medical_profile_options', path: '/api/medical-profile/options' },
 ];
 
 export const LOAD_STAGES = [
