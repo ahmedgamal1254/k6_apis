@@ -51,8 +51,9 @@ export const PUBLIC_ENDPOINTS = [
 
 export const LOAD_STAGES = [
   { duration: '30s', target: 10 }, // Ramp up to 10 VUs
-  { duration: '1m', target: 25 },  // Ramp up to 25 VUs
-  { duration: '1m', target: 25 },  // Hold 25 VUs (steady load)
+  { duration: '3m', target: 25 },  // Ramp up to 25 VUs
+  { duration: '3m', target: 25 },  // Hold 25 VUs (steady load)
+  { duration: '3m', target: 50 },  // Ramp up to 50 VUs
   { duration: '30s', target: 0 },  // Ramp down to 0 VUs
 ];
 
