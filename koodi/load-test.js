@@ -50,7 +50,7 @@ export function runPublicFlow() {
       recordMetrics(res, endpoint.name, passed);
     });
 
-    sleep(0.5);
+    // sleep(0.5);
   }
 }
 
@@ -97,7 +97,7 @@ export function runAuthFlow() {
     recordMetrics(res, 'auth_login', passed);
   });
 
-  sleep(5);
+  sleep(3);
 }
 
 export function handleSummary(data) {
