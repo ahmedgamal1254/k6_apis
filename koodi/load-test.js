@@ -80,7 +80,7 @@ export function runAuthFlow() {
     recordMetrics(res, 'auth_register', passed);
   });
 
-  sleep(0.5);
+  // sleep(0.5);
 
   group('Auth: login (light)', () => {
     const payload = JSON.stringify({ phoneNumber, password });
@@ -97,7 +97,7 @@ export function runAuthFlow() {
     recordMetrics(res, 'auth_login', passed);
   });
 
-  sleep(3);
+  // sleep(3);
 }
 
 export function handleSummary(data) {
