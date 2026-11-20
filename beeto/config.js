@@ -32,6 +32,7 @@ export const TEST_PHONE = __ENV.TEST_PHONE || dotEnv.TEST_PHONE || '01014548796'
 export const TEST_OTP = __ENV.TEST_OTP || dotEnv.TEST_OTP || '123456';
 export const TARGET_VUS = Number(__ENV.VUS || dotEnv.VUS || 20);
 export const RUN_REGISTER = String(__ENV.RUN_REGISTER || dotEnv.RUN_REGISTER || 'false').toLowerCase() === 'true';
+export const DEBUG = String(__ENV.DEBUG || dotEnv.DEBUG || 'false').toLowerCase() === 'true';
 
 export const DEFAULT_HEADERS = {
   Accept: 'application/json',

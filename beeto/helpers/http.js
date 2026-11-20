@@ -1,6 +1,6 @@
 import http from 'k6/http';
 import { check } from 'k6';
-import { BASE_URL, DEFAULT_HEADERS, TEST_OTP } from '../config.js';
+import { BASE_URL, DEBUG, DEFAULT_HEADERS, TEST_OTP } from '../config.js';
 import { recordMetrics } from '../metrics.js';
 
 /**
@@ -75,8 +75,14 @@ export function extractId(res) {
   if (Array.isArray(body?.data) && body.data.length > 0) {
     return body.data[0]?.id ?? null;
   }
+  if (Array.isArray(body?.data?.data) && body.data.data.length > 0) {
+    return body.data.data[0]?.id ?? null;
+  }
   if (Array.isArray(body?.data?.items) && body.data.items.length > 0) {
     return body.data.items[0]?.id ?? null;
+  }
+  if (Array.isArray(body?.data?.products) && body.data.products.length > 0) {
+    return body.data.products[0]?.id ?? null;
   }
   return body?.data?.id ?? body?.id ?? null;
 }
@@ -111,6 +117,9 @@ export function apiRequest(method, path, payload, token, endpointName, extraChec
   };
 
   const passed = check(res, checks);
+  if (DEBUG && !passed) {
+    console.error(`[FAIL] ${method} ${path} -> ${res.status}: ${String(res.body).slice(0, 500)}`);
+  }
   recordMetrics(res, endpointName, passed);
   return res;
 }
