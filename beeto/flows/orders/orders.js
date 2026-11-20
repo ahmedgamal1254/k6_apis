@@ -48,14 +48,12 @@ export function runOrdersFlow(token, addressId = 1) {
       'orders_list'
     );
 
-    if (!orderId) {
-      orderId = extractId(listRes);
-    }
+    const showOrderId = extractId(listRes) || orderId;
 
-    if (orderId) {
+    if (showOrderId) {
       apiRequest(
         'GET',
-        `${API_PREFIX}/store/orders/${orderId}`,
+        `${API_PREFIX}/store/orders/${showOrderId}`,
         null,
         token,
         'orders_show'
