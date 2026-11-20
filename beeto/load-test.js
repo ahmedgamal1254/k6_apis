@@ -53,8 +53,8 @@ export default function () {
 
 export function handleSummary(data) {
   return {
-    'results/beeto-load-summary.json': JSON.stringify(data, null, 2),
-    'results/beeto-endpoints-report.csv': buildCsvReport(data),
+    'beeto-load-summary.json': JSON.stringify(data, null, 2),
+    'beeto-endpoints-report.csv': buildCsvReport(data),
     stdout: buildDetailedSummary(data),
   };
 }
@@ -152,7 +152,7 @@ function buildDetailedSummary(data) {
 
   lines.push(
     '========================================================================================================',
-    'Saved: results/beeto-load-summary.json, results/beeto-endpoints-report.csv',
+    'Saved: beeto-load-summary.json, beeto-endpoints-report.csv',
     ''
   );
 
