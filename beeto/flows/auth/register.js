@@ -4,7 +4,7 @@ import { apiRequest, extractOtp, extractToken } from '../../helpers/http.js';
 
 /**
  * Generate a unique Egyptian mobile number per VU and iteration for registration.
- * Format: 010 + 8 digits
+ * Matches regex: /^(01)[0-5]{1}[0-9]{8}$/
  * @returns {string}
  */
 export function buildUniquePhone() {
@@ -16,9 +16,9 @@ export function buildUniquePhone() {
 
 /**
  * 3-Step Registration Flow (2FA / SMS OTP):
- * 1. POST /auth/register -> sends phone & triggers SMS OTP
- * 2. POST /auth/verify-register -> verifies SMS OTP
- * 3. POST /auth/complete-register -> completes user profile & returns access_token
+ * 1. POST /auth/register/send-otp -> sends phone & triggers SMS OTP
+ * 2. POST /auth/register/verify-otp -> verifies 6-digit SMS OTP
+ * 3. POST /auth/register/complete -> completes user profile & returns access_token
  *
  * @param {string} [phone]
  * @returns {{ phone: string, token: string|null }}
@@ -27,16 +27,13 @@ export function runRegisterFlow(phone = buildUniquePhone()) {
   let token = null;
 
   group('Auth: Register (3-Step 2FA / SMS)', () => {
-    // Step 1: Initiate registration & send SMS OTP
+    // Step 1: Send SMS OTP
     const regRes = apiRequest(
       'POST',
-      `${API_PREFIX}/auth/register`,
-      {
-        phone,
-        name: `K6 User ${__VU}-${__ITER}`,
-      },
+      `${API_PREFIX}/auth/register/send-otp`,
+      { phone },
       null,
-      'auth_register'
+      'auth_register_send_otp'
     );
 
     const code = extractOtp(regRes);
@@ -44,31 +41,36 @@ export function runRegisterFlow(phone = buildUniquePhone()) {
     // Step 2: Verify SMS OTP
     const verifyRes = apiRequest(
       'POST',
-      `${API_PREFIX}/auth/verify-register`,
-      {
-        phone,
-        code,
-      },
+      `${API_PREFIX}/auth/register/verify-otp`,
+      { phone, code },
       null,
-      'auth_verify_register'
+      'auth_register_verify_otp'
     );
 
     token = extractToken(verifyRes);
 
-    // Step 3: Complete registration (profile / password / finalize)
-    const completeRes = apiRequest(
-      'POST',
-      `${API_PREFIX}/auth/complete-register`,
-      {
-        phone,
-        name: `K6 User ${__VU}-${__ITER}`,
-        email: `k6_${__VU}_${__ITER}@example.test`,
-      },
-      token,
-      'auth_complete_register'
-    );
+    // Step 3: Complete registration (only if new user; existing user already got token in step 2)
+    if (!token) {
+      const completeRes = apiRequest(
+        'POST',
+        `${API_PREFIX}/auth/register/complete`,
+        {
+          phone,
+          code,
+          name: `K6 User ${__VU}-${__ITER}`,
+          lat: 30.0444,
+          lon: 31.2357,
+          email: `k6_${__VU}_${__ITER}_${Date.now()}@example.test`,
+        },
+        null,
+        'auth_register_complete',
+        {
+          'has access_token': (r) => Boolean(extractToken(r)),
+        }
+      );
 
-    token = extractToken(completeRes) || token;
+      token = extractToken(completeRes);
+    }
   });
 
   return { phone, token };

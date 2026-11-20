@@ -40,20 +40,25 @@ export const DEFAULT_HEADERS = {
   'X-Language': LANGUAGE,
 };
 
-// All tracked endpoint names & paths (used by metrics.js and handleSummary)
+// All tracked endpoint names & paths (matched to Raghwa/Beeto Laravel routes/api.php)
 export const ENDPOINT_REGISTRY = [
   // Login (2 endpoints - 2FA SMS)
   { name: 'auth_login', method: 'POST', path: `${API_PREFIX}/auth/login` },
   { name: 'auth_verify_login', method: 'POST', path: `${API_PREFIX}/auth/verify-login` },
 
   // Register (3 endpoints - 2FA SMS)
-  { name: 'auth_register', method: 'POST', path: `${API_PREFIX}/auth/register` },
-  { name: 'auth_verify_register', method: 'POST', path: `${API_PREFIX}/auth/verify-register` },
-  { name: 'auth_complete_register', method: 'POST', path: `${API_PREFIX}/auth/complete-register` },
+  { name: 'auth_register_send_otp', method: 'POST', path: `${API_PREFIX}/auth/register/send-otp` },
+  { name: 'auth_register_verify_otp', method: 'POST', path: `${API_PREFIX}/auth/register/verify-otp` },
+  { name: 'auth_register_complete', method: 'POST', path: `${API_PREFIX}/auth/register/complete` },
 
   // Public endpoints
   { name: 'public_home', method: 'GET', path: `${API_PREFIX}/market/home` },
+  { name: 'public_categories', method: 'GET', path: `${API_PREFIX}/market/categories` },
+  { name: 'public_brands', method: 'GET', path: `${API_PREFIX}/market/brands` },
   { name: 'public_products', method: 'GET', path: `${API_PREFIX}/market/products` },
+  { name: 'public_governorates', method: 'GET', path: `${API_PREFIX}/governorates` },
+  { name: 'public_cities', method: 'GET', path: `${API_PREFIX}/cities` },
+  { name: 'public_config', method: 'GET', path: `${API_PREFIX}/config` },
 
   // Mixes endpoints
   { name: 'mixes_ingredients', method: 'GET', path: `${API_PREFIX}/mixes/ingredients` },
@@ -61,20 +66,22 @@ export const ENDPOINT_REGISTRY = [
   { name: 'mixes_list', method: 'GET', path: `${API_PREFIX}/mixes` },
 
   // Cart endpoints
+  { name: 'cart_add', method: 'POST', path: `${API_PREFIX}/cart/add` },
   { name: 'cart_show', method: 'GET', path: `${API_PREFIX}/cart` },
-  { name: 'cart_add', method: 'POST', path: `${API_PREFIX}/cart` },
-  { name: 'cart_update', method: 'PUT', path: `${API_PREFIX}/cart/{id}` },
-  { name: 'cart_delete', method: 'DELETE', path: `${API_PREFIX}/cart/{id}` },
+  { name: 'cart_update', method: 'PUT', path: `${API_PREFIX}/cart/update/{id}` },
+  { name: 'cart_remove', method: 'DELETE', path: `${API_PREFIX}/cart/remove/{id}` },
 
   // Addresses endpoints
   { name: 'addresses_create', method: 'POST', path: `${API_PREFIX}/addresses` },
   { name: 'addresses_list', method: 'GET', path: `${API_PREFIX}/addresses` },
-  { name: 'addresses_show', method: 'GET', path: `${API_PREFIX}/addresses/{id}` },
+  { name: 'addresses_make_default', method: 'POST', path: `${API_PREFIX}/addresses/{id}/make-default` },
+  { name: 'addresses_update', method: 'PUT', path: `${API_PREFIX}/addresses/{id}` },
 
   // Orders endpoints
-  { name: 'orders_create', method: 'POST', path: `${API_PREFIX}/orders` },
-  { name: 'orders_list', method: 'GET', path: `${API_PREFIX}/orders` },
-  { name: 'orders_show', method: 'GET', path: `${API_PREFIX}/orders/{id}` },
+  { name: 'orders_calculate_shipping', method: 'POST', path: `${API_PREFIX}/store/orders/calculate-shipping` },
+  { name: 'orders_create', method: 'POST', path: `${API_PREFIX}/store/orders` },
+  { name: 'orders_list', method: 'GET', path: `${API_PREFIX}/store/orders` },
+  { name: 'orders_show', method: 'GET', path: `${API_PREFIX}/store/orders/{id}` },
 ];
 
 export const LOAD_STAGES = [

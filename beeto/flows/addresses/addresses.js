@@ -1,31 +1,33 @@
 import { group } from 'k6';
-import { API_PREFIX } from '../../config.js';
+import { API_PREFIX, TEST_PHONE } from '../../config.js';
 import { apiRequest, extractId } from '../../helpers/http.js';
 
 /**
  * Addresses Endpoints:
  * - POST /addresses (create address)
  * - GET /addresses (list addresses)
- * - GET /addresses/{id} (show single address)
+ * - POST /addresses/{id}/make-default (set default address)
+ * - PUT /addresses/{id} (update address)
  *
  * @param {string|null} token
+ * @param {{ governorateId?: string|number|null, cityId?: string|number|null, phone?: string }} [opts]
  * @returns {{ addressId: string|number|null }}
  */
-export function runAddressesFlow(token) {
+export function runAddressesFlow(token, opts = {}) {
   let addressId = null;
+  const { governorateId = 1, cityId = 1, phone = TEST_PHONE } = opts;
 
-  group('Addresses: Create, List & Show', () => {
+  group('Addresses: Create, List, Make Default & Update', () => {
     const createRes = apiRequest(
       'POST',
       `${API_PREFIX}/addresses`,
       {
-        title: `Home VU-${__VU}`,
-        city_id: 1,
-        area_id: 1,
-        street: '10 Test Street',
-        building: '5',
-        floor: '2',
-        apartment: '4',
+        governorate_id: governorateId || 1,
+        city_id: cityId || 1,
+        address: `10 Test Street, VU-${__VU}`,
+        phone,
+        lat: 30.0444,
+        lon: 31.2357,
         is_default: true,
       },
       token,
@@ -48,11 +50,21 @@ export function runAddressesFlow(token) {
 
     if (addressId) {
       apiRequest(
-        'GET',
-        `${API_PREFIX}/addresses/${addressId}`,
-        null,
+        'POST',
+        `${API_PREFIX}/addresses/${addressId}/make-default`,
+        {},
         token,
-        'addresses_show'
+        'addresses_make_default'
+      );
+
+      apiRequest(
+        'PUT',
+        `${API_PREFIX}/addresses/${addressId}`,
+        {
+          address: `10 Updated Street, VU-${__VU}`,
+        },
+        token,
+        'addresses_update'
       );
     }
   });

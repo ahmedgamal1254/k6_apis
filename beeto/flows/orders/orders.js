@@ -3,10 +3,11 @@ import { API_PREFIX } from '../../config.js';
 import { apiRequest, extractId } from '../../helpers/http.js';
 
 /**
- * Orders Endpoints:
- * - POST /orders (make order)
- * - GET /orders (list orders)
- * - GET /orders/{id} (show single order)
+ * Orders Endpoints (under /store/orders):
+ * - POST /store/orders/calculate-shipping
+ * - POST /store/orders (checkout / make order)
+ * - GET /store/orders (list orders)
+ * - GET /store/orders/{id} (show single order)
  *
  * @param {string|null} token
  * @param {string|number|null} [addressId]
@@ -15,14 +16,23 @@ import { apiRequest, extractId } from '../../helpers/http.js';
 export function runOrdersFlow(token, addressId = 1) {
   let orderId = null;
 
-  group('Orders: Create, List & Show', () => {
-    const createRes = apiRequest(
+  group('Orders: Calculate Shipping, Create, List & Show', () => {
+    apiRequest(
       'POST',
-      `${API_PREFIX}/orders`,
+      `${API_PREFIX}/store/orders/calculate-shipping`,
       {
         address_id: addressId || 1,
-        payment_method: 'cash',
-        notes: `k6 load test VU ${__VU} iter ${__ITER}`,
+      },
+      token,
+      'orders_calculate_shipping'
+    );
+
+    const createRes = apiRequest(
+      'POST',
+      `${API_PREFIX}/store/orders`,
+      {
+        address_id: addressId || 1,
+        payment_method: 'cod',
       },
       token,
       'orders_create'
@@ -32,7 +42,7 @@ export function runOrdersFlow(token, addressId = 1) {
 
     const listRes = apiRequest(
       'GET',
-      `${API_PREFIX}/orders`,
+      `${API_PREFIX}/store/orders`,
       null,
       token,
       'orders_list'
@@ -45,7 +55,7 @@ export function runOrdersFlow(token, addressId = 1) {
     if (orderId) {
       apiRequest(
         'GET',
-        `${API_PREFIX}/orders/${orderId}`,
+        `${API_PREFIX}/store/orders/${orderId}`,
         null,
         token,
         'orders_show'

@@ -23,8 +23,8 @@ export const options = {
 };
 
 export default function () {
-  // 1. Public market endpoints
-  const { productId } = runPublicFlow();
+  // 1. Public market & lookup endpoints
+  const { productId, governorateId, cityId } = runPublicFlow();
 
   // 2. Auth flow (2FA / SMS)
   let token = null;
@@ -37,15 +37,15 @@ export default function () {
   }
 
   // 3. Mixes endpoints
-  const { mixId } = runMixesFlow(token);
+  runMixesFlow(token);
 
   // 4. Cart endpoints
-  runCartFlow(token, { productId, mixId });
+  runCartFlow(token, { productId });
 
-  // 5. Addresses endpoints (create, list, show)
-  const { addressId } = runAddressesFlow(token);
+  // 5. Addresses endpoints (create, list, make-default, update)
+  const { addressId } = runAddressesFlow(token, { governorateId, cityId });
 
-  // 6. Orders endpoints (create, list, show)
+  // 6. Orders endpoints (calculate-shipping, create, list, show)
   runOrdersFlow(token, addressId);
 
   sleep(1);

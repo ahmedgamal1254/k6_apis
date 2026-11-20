@@ -4,20 +4,21 @@ import { apiRequest, extractId, parseJson } from '../../helpers/http.js';
 
 /**
  * Extract first available ingredient IDs from GET /mixes/ingredients response.
+ * Response keys in MixIngredientController: data.volume, data.use_type, data.scent
  * @param {import('k6/http').RefinedResponse} res
  * @returns {{ volume_id: string|number, use_type_id: string|number, scent_id: string|number }}
  */
 function pickIngredientIds(res) {
   const body = parseJson(res);
   const data = body?.data || body || {};
-  const volumes = data.volumes || data.sizes || [];
-  const useTypes = data.use_types || data.useTypes || data.types || [];
-  const scents = data.scents || data.fragrances || [];
+  const volumes = data.volume || data.volumes || [];
+  const useTypes = data.use_type || data.use_types || [];
+  const scents = data.scent || data.scents || [];
 
   return {
-    volume_id: String(volumes[0]?.id ?? '3'),
-    use_type_id: String(useTypes[0]?.id ?? '15'),
-    scent_id: String(scents[0]?.id ?? '7'),
+    volume_id: volumes[0]?.id ?? 1,
+    use_type_id: useTypes[0]?.id ?? 1,
+    scent_id: scents[0]?.id ?? 1,
   };
 }
 

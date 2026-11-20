@@ -18,8 +18,8 @@ export const options = {
 };
 
 export default function () {
-  // 1. Public endpoints (no auth)
-  const { productId } = runPublicFlow();
+  // 1. Public & lookup endpoints (no auth)
+  const { productId, governorateId, cityId } = runPublicFlow();
   sleep(0.5);
 
   // 2. Auth flow: Register (3 endpoints, 2FA/SMS) or Login (2 endpoints, 2FA/SMS)
@@ -35,17 +35,17 @@ export default function () {
   }
 
   // 3. Mixes endpoints
-  const { mixId } = runMixesFlow(token);
+  runMixesFlow(token);
   sleep(0.5);
 
   // 4. Cart endpoints
-  runCartFlow(token, { productId, mixId });
+  runCartFlow(token, { productId });
   sleep(0.5);
 
-  // 5. Addresses endpoints (create, list, show)
-  const { addressId } = runAddressesFlow(token);
+  // 5. Addresses endpoints (create, list, make-default, update)
+  const { addressId } = runAddressesFlow(token, { governorateId, cityId });
   sleep(0.5);
 
-  // 6. Orders endpoints (create, list, show)
+  // 6. Orders endpoints (calculate-shipping, create, list, show)
   runOrdersFlow(token, addressId);
 }
