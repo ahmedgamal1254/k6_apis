@@ -22,8 +22,8 @@ export const options = {
     auth_light: {
       executor: 'constant-vus',
       exec: 'runAuthFlow',
-      vus: 15,
-      duration: '5m',
+      vus: 25,
+      duration: '7m',
       gracefulStop: '10s',
     },
   },
