@@ -59,6 +59,7 @@ export const PUBLIC_LOAD_STAGES = [
   { duration: '1m', target: 50 },  // Hold 50 VUs
   { duration: '12m', target: 100 }, 
   { duration: '12m', target: 150 }, 
+  { duration: '12m', target: 175 }, 
   // { duration: '3m', target: 200},  
   // { duration: '5m', target: 250},
   { duration: '1m', target: 10},
