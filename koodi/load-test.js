@@ -23,7 +23,7 @@ export const options = {
       executor: 'constant-vus',
       exec: 'runAuthFlow',
       vus: 1,
-      duration: '5m',
+      duration: '25m',
       gracefulStop: '10s',
     },
   },
