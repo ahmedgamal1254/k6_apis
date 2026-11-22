@@ -1,0 +1,911 @@
+{
+  "root_group": {
+    "checks": [],
+    "name": "",
+    "path": "",
+    "id": "d41d8cd98f00b204e9800998ecf8427e",
+    "groups": [
+        {
+          "path": "::Public: health",
+          "id": "bade4e5fec241347d8b80c18efd5debd",
+          "groups": [],
+          "checks": [
+              {
+                "fails": 0,
+                "name": "status is 2xx/3xx",
+                "path": "::Public: health::status is 2xx/3xx",
+                "id": "1252d3d32f81e6d71dd6278930ad82a6",
+                "passes": 169187
+              },
+              {
+                "name": "response body not empty",
+                "path": "::Public: health::response body not empty",
+                "id": "0fd257fdb446b0dd93bb9e057f53d8eb",
+                "passes": 169187,
+                "fails": 0
+              }
+            ],
+          "name": "Public: health"
+        },
+        {
+          "name": "Auth: register (light)",
+          "path": "::Auth: register (light)",
+          "id": "f05c4ec56d6193ee6f992dda90c261a1",
+          "groups": [],
+          "checks": [
+              {
+                "name": "register status is 2xx/409",
+                "path": "::Auth: register (light)::register status is 2xx/409",
+                "id": "f46033129b36f08e4dfeecfd0b2f4378",
+                "passes": 107889,
+                "fails": 0
+              }
+            ]
+        },
+        {
+          "name": "Auth: login (light)",
+          "path": "::Auth: login (light)",
+          "id": "f6e97c3a21db91a79b86f97403a65dcc",
+          "groups": [],
+          "checks": [
+              {
+                "path": "::Auth: login (light)::login status is 2xx",
+                "id": "261316c75465ec821f1cd5de7811a03e",
+                "passes": 107889,
+                "fails": 0,
+                "name": "login status is 2xx"
+              }
+            ]
+        },
+        {
+          "name": "Public: home",
+          "path": "::Public: home",
+          "id": "a4e91044dd0d4722cd885056ade0192a",
+          "groups": [],
+          "checks": [
+              {
+                "name": "status is 2xx/3xx",
+                "path": "::Public: home::status is 2xx/3xx",
+                "id": "55a18fe3f52ddcb2394e3746365b9d46",
+                "passes": 169187,
+                "fails": 0
+              },
+              {
+                "fails": 0,
+                "name": "response body not empty",
+                "path": "::Public: home::response body not empty",
+                "id": "5601e3af0f3418bb8d8dbe58d0e7ab4e",
+                "passes": 169187
+              }
+            ]
+        },
+        {
+          "id": "0994609c230a3e7125cb287a127209f5",
+          "groups": [],
+          "checks": [
+              {
+                "name": "status is 2xx/3xx",
+                "path": "::Public: home_banners::status is 2xx/3xx",
+                "id": "9f84ca888e42dd4d9f956ba2cc322c62",
+                "passes": 169187,
+                "fails": 0
+              },
+              {
+                "passes": 169187,
+                "fails": 0,
+                "name": "response body not empty",
+                "path": "::Public: home_banners::response body not empty",
+                "id": "51828613ead847a2d0491085d55d969e"
+              }
+            ],
+          "name": "Public: home_banners",
+          "path": "::Public: home_banners"
+        },
+        {
+          "name": "Public: home_categories",
+          "path": "::Public: home_categories",
+          "id": "a8d71c61877d64d0878645dd768b9e0c",
+          "groups": [],
+          "checks": [
+              {
+                "name": "status is 2xx/3xx",
+                "path": "::Public: home_categories::status is 2xx/3xx",
+                "id": "d6ec7142859e202191f253649252be2f",
+                "passes": 169187,
+                "fails": 0
+              },
+              {
+                "passes": 169187,
+                "fails": 0,
+                "name": "response body not empty",
+                "path": "::Public: home_categories::response body not empty",
+                "id": "33a69595c5318bf691a0eb319db61de9"
+              }
+            ]
+        },
+        {
+          "path": "::Public: home_new_arrivals",
+          "id": "c8b44dfe1a6110bd12f1102c4e80da36",
+          "groups": [],
+          "checks": [
+              {
+                "fails": 0,
+                "name": "status is 2xx/3xx",
+                "path": "::Public: home_new_arrivals::status is 2xx/3xx",
+                "id": "810ad6139a9d07443a5e3db8afa553c8",
+                "passes": 169187
+              },
+              {
+                "fails": 0,
+                "name": "response body not empty",
+                "path": "::Public: home_new_arrivals::response body not empty",
+                "id": "511e07de7e8f672f14fa7df7d825abbb",
+                "passes": 169187
+              }
+            ],
+          "name": "Public: home_new_arrivals"
+        },
+        {
+          "path": "::Public: home_best_sellers",
+          "id": "40e1f40ac09cab53ae682b22db8e3367",
+          "groups": [],
+          "checks": [
+              {
+                "name": "status is 2xx/3xx",
+                "path": "::Public: home_best_sellers::status is 2xx/3xx",
+                "id": "f554564c3a79837fd5dd6d28b17141d1",
+                "passes": 169187,
+                "fails": 0
+              },
+              {
+                "name": "response body not empty",
+                "path": "::Public: home_best_sellers::response body not empty",
+                "id": "e1586011960eabab4545ba3447622d2b",
+                "passes": 169187,
+                "fails": 0
+              }
+            ],
+          "name": "Public: home_best_sellers"
+        },
+        {
+          "id": "0561b0b25371d328a67b0a61b7b4a64b",
+          "groups": [],
+          "checks": [
+              {
+                "name": "status is 2xx/3xx",
+                "path": "::Public: home_recommended::status is 2xx/3xx",
+                "id": "a7bee35f28335b1eab17a48802edad5f",
+                "passes": 169187,
+                "fails": 0
+              },
+              {
+                "name": "response body not empty",
+                "path": "::Public: home_recommended::response body not empty",
+                "id": "b59a8c126f9f5c9e2040961c85bf4422",
+                "passes": 169187,
+                "fails": 0
+              }
+            ],
+          "name": "Public: home_recommended",
+          "path": "::Public: home_recommended"
+        },
+        {
+          "checks": [
+            {
+              "fails": 0,
+              "name": "status is 2xx/3xx",
+              "path": "::Public: home_similar_vibes::status is 2xx/3xx",
+              "id": "059d5636c6cbc4ec36cf5e1dd6b776b6",
+              "passes": 169187
+            },
+            {
+              "fails": 0,
+              "name": "response body not empty",
+              "path": "::Public: home_similar_vibes::response body not empty",
+              "id": "1b8cf6e1c6fcb616b713705ced8b4853",
+              "passes": 169187
+            }
+          ],
+          "name": "Public: home_similar_vibes",
+          "path": "::Public: home_similar_vibes",
+          "id": "fcfeff8cc3437b339424222a47ef6a4f",
+          "groups": []
+        },
+        {
+          "checks": [
+            {
+              "name": "status is 2xx/3xx",
+              "path": "::Public: home_explore::status is 2xx/3xx",
+              "id": "102f8e72ce0c7b15b6238ba75af8a728",
+              "passes": 169187,
+              "fails": 0
+            },
+            {
+              "passes": 169187,
+              "fails": 0,
+              "name": "response body not empty",
+              "path": "::Public: home_explore::response body not empty",
+              "id": "84d73be83976a3f153fa2499958f2003"
+            }
+          ],
+          "name": "Public: home_explore",
+          "path": "::Public: home_explore",
+          "id": "a0cec542e917ea8f8b8ccf7f2eb2ba14",
+          "groups": []
+        },
+        {
+          "name": "Public: home_offers",
+          "path": "::Public: home_offers",
+          "id": "83ee625a7d0c5d66a3c91a7059769e4b",
+          "groups": [],
+          "checks": [
+              {
+                "fails": 0,
+                "name": "status is 2xx/3xx",
+                "path": "::Public: home_offers::status is 2xx/3xx",
+                "id": "d06c4db1faf08b59c4020a2f546759db",
+                "passes": 169187
+              },
+              {
+                "passes": 169187,
+                "fails": 0,
+                "name": "response body not empty",
+                "path": "::Public: home_offers::response body not empty",
+                "id": "0c925c8f041157d77d23446e25070883"
+              }
+            ]
+        },
+        {
+          "name": "Public: catalog_categories",
+          "path": "::Public: catalog_categories",
+          "id": "ebec79fa6d951710e6748ae37480030c",
+          "groups": [],
+          "checks": [
+              {
+                "name": "status is 2xx/3xx",
+                "path": "::Public: catalog_categories::status is 2xx/3xx",
+                "id": "63531670d3aaa888678dc125aafcc644",
+                "passes": 169187,
+                "fails": 0
+              },
+              {
+                "fails": 0,
+                "name": "response body not empty",
+                "path": "::Public: catalog_categories::response body not empty",
+                "id": "d7a08c09afc92906e226f03d431083d6",
+                "passes": 169187
+              }
+            ]
+        },
+        {
+          "name": "Public: catalog_search",
+          "path": "::Public: catalog_search",
+          "id": "9391055fa4bbb026a68a1412ae95202b",
+          "groups": [],
+          "checks": [
+              {
+                "id": "d208d6d4ad01565e004f651a71c0d308",
+                "passes": 169187,
+                "fails": 0,
+                "name": "status is 2xx/3xx",
+                "path": "::Public: catalog_search::status is 2xx/3xx"
+              },
+              {
+                "name": "response body not empty",
+                "path": "::Public: catalog_search::response body not empty",
+                "id": "54f0e730c470d986807eb7c234824aad",
+                "passes": 169187,
+                "fails": 0
+              }
+            ]
+        },
+        {
+          "groups": [],
+          "checks": [
+              {
+                "id": "88f34c73baa4e8e8e08f2d93ac7ee704",
+                "passes": 169187,
+                "fails": 0,
+                "name": "status is 2xx/3xx",
+                "path": "::Public: catalog_explore::status is 2xx/3xx"
+              },
+              {
+                "passes": 169187,
+                "fails": 0,
+                "name": "response body not empty",
+                "path": "::Public: catalog_explore::response body not empty",
+                "id": "511a9779e7e00be7b3e4a83d7324a002"
+              }
+            ],
+          "name": "Public: catalog_explore",
+          "path": "::Public: catalog_explore",
+          "id": "3aa4546a96a2a55b84c96f6e67295c0b"
+        },
+        {
+          "name": "Public: catalog_outfits",
+          "path": "::Public: catalog_outfits",
+          "id": "7916a29aaa7f0e8755df2bfbaabce9cc",
+          "groups": [],
+          "checks": [
+              {
+                "passes": 169187,
+                "fails": 0,
+                "name": "status is 2xx/3xx",
+                "path": "::Public: catalog_outfits::status is 2xx/3xx",
+                "id": "16ecb6a15b073356f35483be9964292f"
+              },
+              {
+                "id": "9058a05adf06c71225e423526e4c7edf",
+                "passes": 169187,
+                "fails": 0,
+                "name": "response body not empty",
+                "path": "::Public: catalog_outfits::response body not empty"
+              }
+            ]
+        },
+        {
+          "checks": [
+            {
+              "name": "status is 2xx/3xx",
+              "path": "::Public: products::status is 2xx/3xx",
+              "id": "fa99fff26af443f807693a647d7d6a46",
+              "passes": 169187,
+              "fails": 0
+            },
+            {
+              "passes": 169187,
+              "fails": 0,
+              "name": "response body not empty",
+              "path": "::Public: products::response body not empty",
+              "id": "bbbc98b24a99d2116868d70474570314"
+            }
+          ],
+          "name": "Public: products",
+          "path": "::Public: products",
+          "id": "8c2afd2d257000a3715003f2301312e5",
+          "groups": []
+        }
+      ]
+  },
+  "options": {
+    "summaryTrendStats": [
+      "avg",
+      "min",
+      "med",
+      "max",
+      "p(90)",
+      "p(95)",
+      "p(99)",
+      "count"
+    ],
+    "summaryTimeUnit": "",
+    "noColor": false
+  },
+  "state": {
+    "isStdOutTTY": true,
+    "isStdErrTTY": true,
+    "testRunDurationMs": 480015.6022
+  },
+  "metrics": {
+    "ep_products_duration": {
+      "type": "trend",
+      "contains": "time",
+      "values": {
+        "p(90)": 16.54242,
+        "p(95)": 21.146069999999998,
+        "p(99)": 35.00860799999989,
+        "count": 169187,
+        "avg": 7.660736930142544,
+        "min": 0,
+        "med": 5.389,
+        "max": 479.449
+      }
+    },
+    "http_req_connecting": {
+      "type": "trend",
+      "contains": "time",
+      "values": {
+        "count": 2753583,
+        "avg": 0.000196213188416692,
+        "min": 0,
+        "med": 0,
+        "max": 31.1473,
+        "p(90)": 0,
+        "p(95)": 0,
+        "p(99)": 0
+      }
+    },
+    "http_req_tls_handshaking": {
+      "type": "trend",
+      "contains": "time",
+      "values": {
+        "avg": 0,
+        "min": 0,
+        "med": 0,
+        "max": 0,
+        "p(90)": 0,
+        "p(95)": 0,
+        "p(99)": 0,
+        "count": 2753583
+      }
+    },
+    "http_req_receiving": {
+      "values": {
+        "min": 0,
+        "med": 0,
+        "max": 307.5734,
+        "p(90)": 0.5374,
+        "p(95)": 1.7997,
+        "p(99)": 8.505118000000017,
+        "count": 2753583,
+        "avg": 0.36204170718660694
+      },
+      "type": "trend",
+      "contains": "time"
+    },
+    "ep_catalog_categories_duration": {
+      "type": "trend",
+      "contains": "time",
+      "values": {
+        "avg": 6.850631419671685,
+        "min": 0,
+        "med": 4.7935,
+        "max": 692.2279,
+        "p(90)": 15.028579999999991,
+        "p(95)": 19.152059999999985,
+        "p(99)": 30.726451999999973,
+        "count": 169187
+      }
+    },
+    "http_req_duration": {
+      "type": "trend",
+      "contains": "time",
+      "values": {
+        "max": 2930.6278,
+        "p(90)": 23.2816,
+        "p(95)": 42.45366999999997,
+        "p(99)": 129.5464,
+        "count": 2753583,
+        "avg": 12.703895860085012,
+        "min": 0,
+        "med": 6.0343
+      },
+      "thresholds": {
+        "p(95)<1500": {
+          "ok": true
+        }
+      }
+    },
+    "koodi_req_duration": {
+      "thresholds": {
+        "p(95)<1500": {
+          "ok": true
+        }
+      },
+      "type": "trend",
+      "contains": "time",
+      "values": {
+        "p(90)": 23.2816,
+        "p(95)": 42.45366999999997,
+        "p(99)": 129.5464,
+        "count": 2753583,
+        "avg": 12.703895860085014,
+        "min": 0,
+        "med": 6.0343,
+        "max": 2930.6278
+      }
+    },
+    "http_req_duration{expected_response:true}": {
+      "type": "trend",
+      "contains": "time",
+      "values": {
+        "max": 2930.6278,
+        "p(90)": 22.7342,
+        "p(95)": 40.1193,
+        "p(99)": 121.99300000000024,
+        "count": 2742641,
+        "avg": 12.293486388266611,
+        "min": 0,
+        "med": 6.0194
+      }
+    },
+    "http_req_blocked": {
+      "contains": "time",
+      "values": {
+        "count": 2753583,
+        "avg": 0.007626935051531052,
+        "min": 0,
+        "med": 0,
+        "max": 134.1709,
+        "p(90)": 0,
+        "p(95)": 0,
+        "p(99)": 0
+      },
+      "type": "trend"
+    },
+    "http_req_sending": {
+      "type": "trend",
+      "contains": "time",
+      "values": {
+        "p(95)": 0,
+        "p(99)": 0.9988,
+        "count": 2753583,
+        "avg": 0.03561662426736329,
+        "min": 0,
+        "med": 0,
+        "max": 294.8169,
+        "p(90)": 0
+      }
+    },
+    "koodi_active_vus": {
+      "contains": "default",
+      "values": {
+        "value": 24,
+        "min": 1,
+        "max": 175
+      },
+      "type": "gauge"
+    },
+    "ep_home_categories_duration": {
+      "type": "trend",
+      "contains": "time",
+      "values": {
+        "avg": 7.049871715320785,
+        "min": 0,
+        "med": 5.0298,
+        "max": 240.9542,
+        "p(90)": 15.622799999999998,
+        "p(95)": 19.793839999999996,
+        "p(99)": 31.0340519999999,
+        "count": 169187
+      }
+    },
+    "ep_auth_login_duration": {
+      "contains": "time",
+      "values": {
+        "med": 18.6058,
+        "max": 831.1186,
+        "p(90)": 78.96152,
+        "p(95)": 112.62577999999999,
+        "p(99)": 197.3296719999996,
+        "count": 107889,
+        "avg": 33.22231678577039,
+        "min": 0
+      },
+      "type": "trend"
+    },
+    "ep_home_banners_duration": {
+      "type": "trend",
+      "contains": "time",
+      "values": {
+        "p(99)": 31.43015799999993,
+        "count": 169187,
+        "avg": 7.248642437657623,
+        "min": 0,
+        "med": 5.1568,
+        "max": 450.9966,
+        "p(90)": 15.903659999999997,
+        "p(95)": 20.135089999999987
+      }
+    },
+    "ep_health_duration": {
+      "type": "trend",
+      "contains": "time",
+      "values": {
+        "max": 1056.2907,
+        "p(90)": 97.76163999999996,
+        "p(95)": 135.87613999999982,
+        "p(99)": 231.04485399999885,
+        "count": 169187,
+        "avg": 37.87858617151408,
+        "min": 0,
+        "med": 19.0711
+      }
+    },
+    "ep_home_explore_duration": {
+      "contains": "time",
+      "values": {
+        "max": 357.847,
+        "p(90)": 15.135679999999999,
+        "p(95)": 19.285469999999997,
+        "p(99)": 30.81544599999994,
+        "count": 169187,
+        "avg": 6.9190198324928245,
+        "min": 0,
+        "med": 4.9138
+      },
+      "type": "trend"
+    },
+    "http_reqs": {
+      "type": "counter",
+      "contains": "default",
+      "values": {
+        "count": 2753583,
+        "rate": 5736.444789252311
+      }
+    },
+    "data_sent": {
+      "type": "counter",
+      "contains": "data",
+      "values": {
+        "count": 391050827,
+        "rate": 814662.7426436598
+      }
+    },
+    "ep_home_new_arrivals_duration": {
+      "type": "trend",
+      "contains": "time",
+      "values": {
+        "med": 5.2108,
+        "max": 355.4367,
+        "p(90)": 15.8034,
+        "p(95)": 20.098949999999956,
+        "p(99)": 32.24341799999994,
+        "count": 169187,
+        "avg": 7.315070859462973,
+        "min": 0
+      }
+    },
+    "koodi_success_rate": {
+      "thresholds": {
+        "rate>0.95": {
+          "ok": true
+        }
+      },
+      "type": "rate",
+      "contains": "default",
+      "values": {
+        "rate": 1,
+        "passes": 2753583,
+        "fails": 0
+      }
+    },
+    "ep_catalog_explore_duration": {
+      "type": "trend",
+      "contains": "time",
+      "values": {
+        "p(95)": 19.792879999999993,
+        "p(99)": 31.697739999999985,
+        "count": 169187,
+        "avg": 7.074042062333268,
+        "min": 0,
+        "med": 4.979,
+        "max": 690.9305,
+        "p(90)": 15.4906
+      }
+    },
+    "koodi_total_requests": {
+      "type": "counter",
+      "contains": "default",
+      "values": {
+        "count": 2753583,
+        "rate": 5736.444789252311
+      }
+    },
+    "vus_max": {
+      "type": "gauge",
+      "contains": "default",
+      "values": {
+        "value": 175,
+        "min": 175,
+        "max": 175
+      }
+    },
+    "checks": {
+      "values": {
+        "rate": 1,
+        "passes": 5291388,
+        "fails": 0
+      },
+      "type": "rate",
+      "contains": "default"
+    },
+    "http_req_waiting": {
+      "type": "trend",
+      "contains": "time",
+      "values": {
+        "med": 5.7344,
+        "max": 2926.0636,
+        "p(90)": 22.185260000000056,
+        "p(95)": 41.2807,
+        "p(99)": 128.8403080000001,
+        "count": 2753583,
+        "avg": 12.306237528632623,
+        "min": 0
+      }
+    },
+    "ep_home_best_sellers_duration": {
+      "type": "trend",
+      "contains": "time",
+      "values": {
+        "min": 0,
+        "med": 5.2138,
+        "max": 354.2522,
+        "p(90)": 15.871579999999991,
+        "p(95)": 20.358569999999997,
+        "p(99)": 33.42645199999967,
+        "count": 169187,
+        "avg": 7.3970646627695285
+      }
+    },
+    "ep_catalog_outfits_duration": {
+      "type": "trend",
+      "contains": "time",
+      "values": {
+        "p(95)": 19.83396999999998,
+        "p(99)": 31.210437999999975,
+        "count": 169187,
+        "avg": 6.977062380088329,
+        "min": 0,
+        "med": 4.8718,
+        "max": 690.9305,
+        "p(90)": 15.526059999999996
+      }
+    },
+    "vus": {
+      "type": "gauge",
+      "contains": "default",
+      "values": {
+        "value": 1,
+        "min": 1,
+        "max": 174
+      }
+    },
+    "koodi_ttfb": {
+      "type": "trend",
+      "contains": "time",
+      "values": {
+        "med": 5.7344,
+        "max": 2926.0636,
+        "p(90)": 22.185260000000056,
+        "p(95)": 41.2807,
+        "p(99)": 128.8403080000001,
+        "count": 2753583,
+        "avg": 12.30623752863262,
+        "min": 0
+      }
+    },
+    "http_req_failed": {
+      "type": "rate",
+      "contains": "default",
+      "values": {
+        "passes": 10942,
+        "fails": 2742641,
+        "rate": 0.003973731679778674
+      },
+      "thresholds": {
+        "rate<0.05": {
+          "ok": true
+        }
+      }
+    },
+    "ep_home_recommended_duration": {
+      "type": "trend",
+      "contains": "time",
+      "values": {
+        "p(95)": 20.16521999999999,
+        "p(99)": 33.28824999999996,
+        "count": 169187,
+        "avg": 7.352632350594333,
+        "min": 0,
+        "med": 5.2001,
+        "max": 250.5116,
+        "p(90)": 15.811699999999997
+      }
+    },
+    "ep_home_similar_vibes_duration": {
+      "type": "trend",
+      "contains": "time",
+      "values": {
+        "med": 4.9961,
+        "max": 691.0752,
+        "p(90)": 15.3045,
+        "p(95)": 19.41127,
+        "p(99)": 31.325981999999904,
+        "count": 169187,
+        "avg": 7.026752827935779,
+        "min": 0
+      }
+    },
+    "group_duration": {
+      "type": "trend",
+      "contains": "time",
+      "values": {
+        "p(90)": 25.1779,
+        "p(95)": 45.24108999999999,
+        "p(99)": 131.12478000000016,
+        "count": 2753583,
+        "avg": 13.450300730321453,
+        "min": 0,
+        "med": 6.3992,
+        "max": 2930.6278
+      }
+    },
+    "data_received": {
+      "contains": "data",
+      "values": {
+        "count": 39319658253,
+        "rate": 81913292.13631965
+      },
+      "type": "counter"
+    },
+    "iteration_duration": {
+      "values": {
+        "p(95)": 332.11005,
+        "p(99)": 460.28315,
+        "count": 277076,
+        "avg": 134.17044799874293,
+        "min": 2.9836,
+        "med": 102.68565,
+        "max": 7571.9553,
+        "p(90)": 276.22105
+      },
+      "type": "trend",
+      "contains": "time"
+    },
+    "iterations": {
+      "values": {
+        "rate": 577.2229042766727,
+        "count": 277076
+      },
+      "type": "counter",
+      "contains": "default"
+    },
+    "ep_home_duration": {
+      "type": "trend",
+      "contains": "time",
+      "values": {
+        "p(95)": 30.3259,
+        "p(99)": 47.392777999999964,
+        "count": 169187,
+        "avg": 10.696020027543316,
+        "min": 0,
+        "med": 7.3033,
+        "max": 2930.6278,
+        "p(90)": 23.352639999999997
+      }
+    },
+    "ep_home_offers_duration": {
+      "type": "trend",
+      "contains": "time",
+      "values": {
+        "p(95)": 19.005709999999997,
+        "p(99)": 30.394825999999988,
+        "count": 169187,
+        "avg": 6.752652181314248,
+        "min": 0,
+        "med": 4.7416,
+        "max": 453.2201,
+        "p(90)": 14.873819999999998
+      }
+    },
+    "ep_auth_register_duration": {
+      "values": {
+        "med": 39.1072,
+        "max": 1310.1331,
+        "p(90)": 144.81525999999997,
+        "p(95)": 194.73425999999978,
+        "p(99)": 322.9031879999997,
+        "count": 107889,
+        "avg": 62.33571816867439,
+        "min": 0
+      },
+      "type": "trend",
+      "contains": "time"
+    },
+    "ep_catalog_search_duration": {
+      "values": {
+        "min": 0,
+        "med": 4.9845,
+        "max": 2396.0896,
+        "p(90)": 15.434459999999998,
+        "p(95)": 19.732749999999992,
+        "p(99)": 33.13324399999978,
+        "count": 169187,
+        "avg": 11.625484569145268
+      },
+      "type": "trend",
+      "contains": "time"
+    }
+  }
+}
