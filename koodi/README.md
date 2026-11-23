@@ -24,20 +24,23 @@ Load and concurrency testing suite for **Koodi API** inside `D:\k6\koodi`, with 
 ```powershell
 cd D:\k6\koodi
 
-# 1. Smoke test (Public + 1 Cart + 1 Checkout cycle)
-k6 run smoke-test.js
-
-# 2. Full 150-VU funnel test (150 Public + 30 Cart + 15 Checkout + 10 Auth)
-k6 run load-test.js
-
-# 3. Custom split (e.g. 150 Explore + 0 Cart + 15 Checkout)
-k6 run -e CART_VUS=0 -e CHECKOUT_VUS=15 load-test.js
-
-# 4. Cart + Checkout standalone test (without public browse)
+# 1. 25 VUs Async Load Test (50% Making Orders + 50% Cart Shoppers)
 k6 run checkout-test.js
 
-# 5. Checkout dry-run (calculates prices without saving orders or reserving stock)
+# 2. Run against VPS or custom URL
+k6 run -e BASE_URL=http://api.koodi.top checkout-test.js
+
+# 3. Dry-run (Calculates pricing & places orders without stock reservation)
 k6 run -e DRY_RUN_CHECKOUT=true checkout-test.js
+
+# 4. Custom VUs and Duration (e.g. 50 VUs for 5 minutes, 50% orders)
+k6 run -e VUS=50 -e DURATION=5m checkout-test.js
+
+# 5. Smoke test (Quick 1-VU sanity check)
+k6 run smoke-test.js
+
+# 6. Full 150-VU funnel test
+k6 run load-test.js
 ```
 
 Override `BASE_URL` or VU counts anytime in `.env` or via `-e BASE_URL=https://...`.

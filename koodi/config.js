@@ -53,6 +53,14 @@ export const DEBUG = parseBoolEnv('DEBUG', false);
 export const TEST_PHONE = getEnvValue('TEST_PHONE', '');
 export const TEST_PASSWORD = getEnvValue('TEST_PASSWORD', 'K6TestUser!2026');
 
+// Dedicated Async Checkout / Order Load Configuration (Default 25 VUs total, 50% Orders)
+export const TOTAL_VUS = parseIntEnv('VUS', 25);
+export const ORDER_PERCENTAGE = parseIntEnv('ORDER_PERCENTAGE', parseIntEnv('ORDER_PERCENT', 50));
+export const ASYNC_MODE = parseBoolEnv('ASYNC_MODE', true);
+export const CHECKOUT_DURATION = getEnvValue('DURATION', '3m');
+export const ASYNC_CHECKOUT_VUS = Math.round(TOTAL_VUS * (ORDER_PERCENTAGE / 100)); // 13 VUs (50% making orders)
+export const ASYNC_CART_VUS = Math.max(0, TOTAL_VUS - ASYNC_CHECKOUT_VUS); // 12 VUs (50% cart/browse)
+
 export const LANGUAGES = ['ar', 'en', 'ku'];
 export const GOVERNORATES = ['baghdad', 'erbil', 'basra', 'sulaymaniyah', 'najaf'];
 
