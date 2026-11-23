@@ -2,5 +2,5 @@
 /kenzi/results
 /koodi/results
 /beeto/results
-*.csv
-*.json
+/koodi/koodi-endpoints-report.csv
+/koodi/koodi-load-summary.json
