@@ -1,5 +1,5 @@
 import { Counter, Gauge, Rate, Trend } from 'k6/metrics';
-import { AUTH_ENDPOINTS, PUBLIC_ENDPOINTS } from './config.js';
+import { ALL_ENDPOINTS } from './config.js';
 
 export const koodiReqDuration = new Trend('koodi_req_duration', true);
 export const koodiTtfb = new Trend('koodi_ttfb', true);
@@ -8,10 +8,16 @@ export const koodiErrorCount = new Counter('koodi_error_count');
 export const koodiTotalRequests = new Counter('koodi_total_requests');
 export const koodiActiveVUs = new Gauge('koodi_active_vus');
 
+// Cart & Checkout funnel metrics
+export const koodiOrdersCreated = new Counter('koodi_orders_created');
+export const koodiOutOfStockCount = new Counter('koodi_out_of_stock_count');
+export const koodiCartSuccessRate = new Rate('koodi_cart_success_rate');
+export const koodiCheckoutSuccessRate = new Rate('koodi_checkout_success_rate');
+
 export const endpointDurations = {};
 export const endpointErrors = {};
 
-for (const ep of [...PUBLIC_ENDPOINTS, ...AUTH_ENDPOINTS]) {
+for (const ep of ALL_ENDPOINTS) {
   endpointDurations[ep.name] = new Trend(`ep_${ep.name}_duration`, true);
   endpointErrors[ep.name] = new Counter(`ep_${ep.name}_errors`);
 }

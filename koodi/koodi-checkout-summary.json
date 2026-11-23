@@ -1,0 +1,1119 @@
+{
+  "options": {
+    "summaryTrendStats": [
+      "avg",
+      "min",
+      "med",
+      "max",
+      "p(90)",
+      "p(95)",
+      "p(99)",
+      "count"
+    ],
+    "summaryTimeUnit": "",
+    "noColor": false
+  },
+  "state": {
+    "isStdOutTTY": true,
+    "isStdErrTTY": true,
+    "testRunDurationMs": 483967.3041
+  },
+  "metrics": {
+    "ep_cart_get_duration": {
+      "type": "trend",
+      "contains": "time",
+      "values": {
+        "p(90)": 16.2395,
+        "p(95)": 18.746399999999998,
+        "p(99)": 20.652524999999997,
+        "count": 826,
+        "avg": 9.223367433414037,
+        "min": 0.707,
+        "med": 7.79725,
+        "max": 25.3432
+      }
+    },
+    "koodi_total_requests": {
+      "type": "counter",
+      "contains": "default",
+      "values": {
+        "count": 4682,
+        "rate": 9.674207245687365
+      }
+    },
+    "koodi_orders_created": {
+      "values": {
+        "count": 181,
+        "rate": 0.3739922066359276
+      },
+      "type": "counter",
+      "contains": "default"
+    },
+    "http_req_duration{scenario:checkout_load}": {
+      "type": "trend",
+      "contains": "time",
+      "values": {
+        "med": 8.8492,
+        "max": 167.2649,
+        "p(90)": 20.29544,
+        "p(95)": 25.501099999999994,
+        "p(99)": 38.01398199999999,
+        "count": 1324,
+        "avg": 11.030957779456198,
+        "min": 0.5077
+      },
+      "thresholds": {
+        "p(95)<2000": {
+          "ok": true
+        }
+      }
+    },
+    "koodi_ttfb": {
+      "contains": "time",
+      "values": {
+        "min": 0,
+        "med": 6.0421499999999995,
+        "max": 171.916,
+        "p(90)": 16.66637,
+        "p(95)": 20.771189999999994,
+        "p(99)": 30.685429999999904,
+        "count": 4682,
+        "avg": 7.783295536095701
+      },
+      "type": "trend"
+    },
+    "ep_product_details_duration": {
+      "type": "trend",
+      "contains": "time",
+      "values": {
+        "avg": 7.144192660550454,
+        "min": 0.3599,
+        "med": 5.73665,
+        "max": 64.4075,
+        "p(90)": 13.0289,
+        "p(95)": 14.216409999999996,
+        "p(99)": 20.908375999999976,
+        "count": 872
+      }
+    },
+    "http_req_failed": {
+      "type": "rate",
+      "contains": "default",
+      "values": {
+        "rate": 0.01681208767822941,
+        "passes": 79,
+        "fails": 4620
+      },
+      "thresholds": {
+        "rate<0.05": {
+          "ok": true
+        }
+      }
+    },
+    "http_req_tls_handshaking": {
+      "values": {
+        "med": 0,
+        "max": 0,
+        "p(90)": 0,
+        "p(95)": 0,
+        "p(99)": 0,
+        "count": 4699,
+        "avg": 0,
+        "min": 0
+      },
+      "type": "trend",
+      "contains": "time"
+    },
+    "koodi_out_of_stock_count": {
+      "type": "counter",
+      "contains": "default",
+      "values": {
+        "count": 47,
+        "rate": 0.0971139984082243
+      }
+    },
+    "http_req_waiting": {
+      "type": "trend",
+      "contains": "time",
+      "values": {
+        "max": 171.916,
+        "p(90)": 16.655679999999997,
+        "p(95)": 20.755719999999993,
+        "p(99)": 30.645139999999888,
+        "count": 4699,
+        "avg": 7.761510385188354,
+        "min": 0,
+        "med": 6.0248
+      }
+    },
+    "http_req_receiving": {
+      "type": "trend",
+      "contains": "time",
+      "values": {
+        "med": 0.8311,
+        "max": 14.7637,
+        "p(90)": 5.441419999999998,
+        "p(95)": 7.157269999999997,
+        "p(99)": 10.221093999999972,
+        "count": 4699,
+        "avg": 1.9276257075973628,
+        "min": 0
+      }
+    },
+    "data_received": {
+      "values": {
+        "count": 6861803,
+        "rate": 14178.236715309546
+      },
+      "type": "counter",
+      "contains": "data"
+    },
+    "checks": {
+      "values": {
+        "rate": 0.9950735124316835,
+        "passes": 12927,
+        "fails": 64
+      },
+      "type": "rate",
+      "contains": "default"
+    },
+    "ep_cart_update_duration": {
+      "type": "trend",
+      "contains": "time",
+      "values": {
+        "min": 0.3382,
+        "med": 10.48525,
+        "max": 60.8054,
+        "p(90)": 21.380350000000018,
+        "p(95)": 24.96983,
+        "p(99)": 31.505145000000013,
+        "count": 644,
+        "avg": 12.600825776397501
+      }
+    },
+    "ep_auth_register_duration": {
+      "type": "trend",
+      "contains": "time",
+      "values": {
+        "min": 0.573,
+        "med": 7.2036,
+        "max": 167.2649,
+        "p(90)": 13.8472,
+        "p(95)": 15.785039999999999,
+        "p(99)": 103.34416400000033,
+        "count": 45,
+        "avg": 11.703555555555555
+      }
+    },
+    "http_req_duration{scenario:cart_load}": {
+      "type": "trend",
+      "contains": "time",
+      "values": {
+        "avg": 9.223031834425273,
+        "min": 0,
+        "med": 7.8245000000000005,
+        "max": 176.3517,
+        "p(90)": 17.186620000000016,
+        "p(95)": 20.796159999999972,
+        "p(99)": 29.814140999999996,
+        "count": 3358
+      },
+      "thresholds": {
+        "p(95)<1200": {
+          "ok": true
+        }
+      }
+    },
+    "ep_cart_clear_duration": {
+      "type": "trend",
+      "contains": "time",
+      "values": {
+        "avg": 4.657921164021165,
+        "min": 0.5871,
+        "med": 4.1008,
+        "max": 9.7217,
+        "p(90)": 8.33838,
+        "p(95)": 8.891,
+        "p(99)": 9.477132000000001,
+        "count": 189
+      }
+    },
+    "koodi_cart_success_rate": {
+      "values": {
+        "rate": 0.9531478770131772,
+        "passes": 651,
+        "fails": 32
+      },
+      "thresholds": {
+        "rate>0.95": {
+          "ok": true
+        }
+      },
+      "type": "rate",
+      "contains": "default"
+    },
+    "koodi_req_duration": {
+      "type": "trend",
+      "contains": "time",
+      "values": {
+        "count": 4682,
+        "avg": 9.734286416061513,
+        "min": 0,
+        "med": 8.08645,
+        "max": 176.3517,
+        "p(90)": 18.32554000000002,
+        "p(95)": 22.333994999999998,
+        "p(99)": 31.957537999999992
+      }
+    },
+    "http_req_duration": {
+      "type": "trend",
+      "contains": "time",
+      "values": {
+        "med": 8.0771,
+        "max": 176.3517,
+        "p(90)": 18.2856,
+        "p(95)": 22.327109999999994,
+        "p(99)": 31.95410399999999,
+        "count": 4699,
+        "avg": 9.705852904873378,
+        "min": 0
+      }
+    },
+    "koodi_active_vus": {
+      "type": "gauge",
+      "contains": "default",
+      "values": {
+        "value": 9,
+        "min": 1,
+        "max": 45
+      }
+    },
+    "http_req_connecting": {
+      "contains": "time",
+      "values": {
+        "avg": 0.009869142370717171,
+        "min": 0,
+        "med": 0,
+        "max": 3.4337,
+        "p(90)": 0,
+        "p(95)": 0,
+        "p(99)": 0,
+        "count": 4699
+      },
+      "type": "trend"
+    },
+    "ep_cart_delete_duration": {
+      "type": "trend",
+      "contains": "time",
+      "values": {
+        "med": 3.60105,
+        "max": 19.382,
+        "p(90)": 7.854310000000001,
+        "p(95)": 8.71925,
+        "p(99)": 9.698239000000003,
+        "count": 644,
+        "avg": 4.333067701863355,
+        "min": 0.3815
+      }
+    },
+    "iteration_duration": {
+      "type": "trend",
+      "contains": "time",
+      "values": {
+        "min": 2012.7459,
+        "med": 8082.9577,
+        "max": 20088.0048,
+        "p(90)": 15075.14654,
+        "p(95)": 16102.55137,
+        "p(99)": 18071.690534999998,
+        "count": 872,
+        "avg": 9282.991220068807
+      }
+    },
+    "ep_checkout_create_duration": {
+      "type": "trend",
+      "contains": "time",
+      "values": {
+        "max": 55.6353,
+        "p(90)": 34.13792,
+        "p(95)": 37.68344,
+        "p(99)": 47.365818999999995,
+        "count": 182,
+        "avg": 21.592173076923093,
+        "min": 9.2413,
+        "med": 19.73715
+      }
+    },
+    "http_req_duration{expected_response:true}": {
+      "type": "trend",
+      "contains": "time",
+      "values": {
+        "count": 4620,
+        "avg": 9.715391731601729,
+        "min": 0,
+        "med": 8.06175,
+        "max": 176.3517,
+        "p(90)": 18.362430000000003,
+        "p(95)": 22.42531,
+        "p(99)": 31.97006200000001
+      }
+    },
+    "data_sent": {
+      "type": "counter",
+      "contains": "data",
+      "values": {
+        "count": 3264087,
+        "rate": 6744.437015368205
+      }
+    },
+    "vus_max": {
+      "type": "gauge",
+      "contains": "default",
+      "values": {
+        "value": 45,
+        "min": 45,
+        "max": 45
+      }
+    },
+    "http_req_sending": {
+      "values": {
+        "p(90)": 0,
+        "p(95)": 0,
+        "p(99)": 0.6042999999999976,
+        "count": 4699,
+        "avg": 0.016716812087678237,
+        "min": 0,
+        "med": 0,
+        "max": 1.0883
+      },
+      "type": "trend",
+      "contains": "time"
+    },
+    "koodi_error_count": {
+      "type": "counter",
+      "contains": "default",
+      "values": {
+        "count": 32,
+        "rate": 0.06612016912900377
+      }
+    },
+    "http_reqs": {
+      "type": "counter",
+      "contains": "default",
+      "values": {
+        "count": 4699,
+        "rate": 9.709333585537149
+      }
+    },
+    "group_duration": {
+      "contains": "time",
+      "values": {
+        "count": 872,
+        "avg": 6905.2520797018415,
+        "min": 1009.6119,
+        "med": 6063.20545,
+        "max": 15112.8725,
+        "p(90)": 11093.74176,
+        "p(95)": 12119.141575,
+        "p(99)": 14061.246595999999
+      },
+      "type": "trend"
+    },
+    "ep_cart_add_duration": {
+      "type": "trend",
+      "contains": "time",
+      "values": {
+        "max": 176.3517,
+        "p(90)": 22.530899999999995,
+        "p(95)": 26.00069999999999,
+        "p(99)": 32.08747999999999,
+        "count": 872,
+        "avg": 13.201594266055054,
+        "min": 0.5318,
+        "med": 10.9072
+      }
+    },
+    "ep_cart_update_errors": {
+      "values": {
+        "count": 32,
+        "rate": 0.06612016912900377
+      },
+      "type": "counter",
+      "contains": "default"
+    },
+    "iterations": {
+      "type": "counter",
+      "contains": "default",
+      "values": {
+        "count": 872,
+        "rate": 1.8017746087653528
+      }
+    },
+    "vus": {
+      "values": {
+        "value": 1,
+        "min": 1,
+        "max": 45
+      },
+      "type": "gauge",
+      "contains": "default"
+    },
+    "http_req_blocked": {
+      "values": {
+        "avg": 0.013729389231751432,
+        "min": 0,
+        "med": 0,
+        "max": 3.4337,
+        "p(90)": 0,
+        "p(95)": 0,
+        "p(99)": 0.6225379999999991,
+        "count": 4699
+      },
+      "type": "trend",
+      "contains": "time"
+    },
+    "koodi_checkout_success_rate": {
+      "type": "rate",
+      "contains": "default",
+      "values": {
+        "rate": 1,
+        "passes": 189,
+        "fails": 0
+      },
+      "thresholds": {
+        "rate>0.95": {
+          "ok": true
+        }
+      }
+    },
+    "koodi_success_rate": {
+      "contains": "default",
+      "values": {
+        "rate": 0.9931653139683896,
+        "passes": 4650,
+        "fails": 32
+      },
+      "thresholds": {
+        "rate>0.95": {
+          "ok": true
+        }
+      },
+      "type": "rate"
+    },
+    "ep_auth_login_duration": {
+      "type": "trend",
+      "contains": "time",
+      "values": {
+        "max": 5.6907,
+        "p(90)": 3.87836,
+        "p(95)": 4.12538,
+        "p(99)": 5.52702,
+        "count": 45,
+        "avg": 2.4822022222222233,
+        "min": 0,
+        "med": 2.2227
+      }
+    },
+    "ep_order_details_duration": {
+      "type": "trend",
+      "contains": "time",
+      "values": {
+        "count": 181,
+        "avg": 12.032334254143644,
+        "min": 2.333,
+        "med": 10.8669,
+        "max": 44.1531,
+        "p(90)": 19.3353,
+        "p(95)": 22.1693,
+        "p(99)": 35.12019999999994
+      }
+    },
+    "ep_checkout_calculate_duration": {
+      "type": "trend",
+      "contains": "time",
+      "values": {
+        "avg": 9.253514835164834,
+        "min": 0.7938,
+        "med": 8.07905,
+        "max": 20.2631,
+        "p(90)": 14.964490000000001,
+        "p(95)": 18.496904999999998,
+        "p(99)": 20.017291,
+        "count": 182
+      }
+    }
+  },
+  "setup_data": {
+    "productIds": [
+      "1d928d4f-e845-4829-b8ef-4b61d36acee3",
+      "2d97eed1-71f6-4463-9be8-2e71c15ed90e",
+      "6bd66d82-d6c3-4952-acab-39ead044e1f4",
+      "7689ff06-53c2-4f88-91e0-8b544746a26d",
+      "8b90893f-e4ee-47e2-bb9d-efec6583bfce",
+      "94d8205b-f020-4271-84c5-17cb741783ff",
+      "abe94b2e-a1e4-474f-a435-a1d7b4d966df",
+      "c228b407-cc73-4bbb-9686-55d284127342",
+      "c52b0880-21a3-4abd-84e0-a6be6dd983a0",
+      "f9182868-9a0b-4c60-8c02-b505ebb7cefd",
+      "8b825298-a88b-40d0-80b2-fbf50e7c41c9",
+      "00c083be-25c3-4d54-8dfa-01ddf8ac65b3",
+      "25bc7481-1b58-4c34-9cd2-35f3ae49fddd",
+      "0613f1f5-d8f5-4ebb-932c-de77e54d0152",
+      "54ac92c0-17b6-44eb-bac1-001624c7d57a"
+    ],
+    "inStockVariants": [
+      {
+        "availableStock": 15,
+        "productId": "1d928d4f-e845-4829-b8ef-4b61d36acee3",
+        "productVariantId": "9757401d-92cf-4d18-9083-4f2be3157005",
+        "sku": "KD-SHRT-GIZA-S"
+      },
+      {
+        "availableStock": 30,
+        "productId": "1d928d4f-e845-4829-b8ef-4b61d36acee3",
+        "productVariantId": "94e59149-2821-4d82-82a5-3ea22ae611aa",
+        "sku": "KD-SHRT-GIZA-L"
+      },
+      {
+        "productVariantId": "76bed7f7-9baf-448c-acd4-9ad14f2bf7db",
+        "sku": "KD-SHRT-GIZA-XL",
+        "availableStock": 18,
+        "productId": "1d928d4f-e845-4829-b8ef-4b61d36acee3"
+      },
+      {
+        "productId": "1d928d4f-e845-4829-b8ef-4b61d36acee3",
+        "productVariantId": "13592eb8-12ea-4477-bdad-4b6efab12b99",
+        "sku": "KD-SHRT-GIZA-M",
+        "availableStock": 22
+      },
+      {
+        "availableStock": 10,
+        "productId": "2d97eed1-71f6-4463-9be8-2e71c15ed90e",
+        "productVariantId": "aceb602f-cb7c-418e-80d4-62676259bb52",
+        "sku": "KD-SHOE-LOAF-42"
+      },
+      {
+        "availableStock": 7,
+        "productId": "2d97eed1-71f6-4463-9be8-2e71c15ed90e",
+        "productVariantId": "279a84bf-4182-4c8c-b377-acc79c0acbe6",
+        "sku": "KD-SHOE-LOAF-44"
+      },
+      {
+        "availableStock": 12,
+        "productId": "2d97eed1-71f6-4463-9be8-2e71c15ed90e",
+        "productVariantId": "31184030-9907-4d93-8bf3-c379870e0b61",
+        "sku": "KD-SHOE-LOAF-43"
+      },
+      {
+        "availableStock": 4,
+        "productId": "2d97eed1-71f6-4463-9be8-2e71c15ed90e",
+        "productVariantId": "52da350d-65a6-4edc-b919-ffbcaaaeecb6",
+        "sku": "KD-SHOE-LOAF-41"
+      },
+      {
+        "sku": "KD-TUX-TOMFORD-50",
+        "availableStock": 6,
+        "productId": "6bd66d82-d6c3-4952-acab-39ead044e1f4",
+        "productVariantId": "10854c4b-198c-4437-b6b2-a2ce1688be52"
+      },
+      {
+        "availableStock": 3,
+        "productId": "6bd66d82-d6c3-4952-acab-39ead044e1f4",
+        "productVariantId": "22f97625-1d43-44b8-a600-772a83feb2d4",
+        "sku": "KD-TUX-TOMFORD-48"
+      },
+      {
+        "availableStock": 5,
+        "productId": "6bd66d82-d6c3-4952-acab-39ead044e1f4",
+        "productVariantId": "d6030b09-9bc3-4b2a-afc6-16b570263cc4",
+        "sku": "KD-TUX-TOMFORD-52"
+      },
+      {
+        "productVariantId": "1a5dc584-46d5-40c7-8248-2341c0dee066",
+        "sku": "KD-SHRT-BLUE-S",
+        "availableStock": 9,
+        "productId": "7689ff06-53c2-4f88-91e0-8b544746a26d"
+      },
+      {
+        "availableStock": 20,
+        "productId": "7689ff06-53c2-4f88-91e0-8b544746a26d",
+        "productVariantId": "979658e0-2797-4ce7-bb10-97495f06444b",
+        "sku": "KD-SHRT-BLUE-M"
+      },
+      {
+        "availableStock": 12,
+        "productId": "7689ff06-53c2-4f88-91e0-8b544746a26d",
+        "productVariantId": "266405d0-f4cc-46e6-a3a1-ab49cd08c795",
+        "sku": "KD-SHRT-BLUE-XL"
+      },
+      {
+        "productVariantId": "0d3d9378-7801-4532-999e-726ce0d2b259",
+        "sku": "KD-SHRT-BLUE-L",
+        "availableStock": 22,
+        "productId": "7689ff06-53c2-4f88-91e0-8b544746a26d"
+      },
+      {
+        "availableStock": 7,
+        "productId": "8b90893f-e4ee-47e2-bb9d-efec6583bfce",
+        "productVariantId": "36e57ca4-3c5f-4273-b453-b4043e0938a4",
+        "sku": "KD-SUIT-CANALI-52"
+      },
+      {
+        "productId": "8b90893f-e4ee-47e2-bb9d-efec6583bfce",
+        "productVariantId": "cff78e56-bf2f-4e95-a318-147afa96080d",
+        "sku": "KD-SUIT-CANALI-50",
+        "availableStock": 9
+      },
+      {
+        "availableStock": 5,
+        "productId": "8b90893f-e4ee-47e2-bb9d-efec6583bfce",
+        "productVariantId": "5b85916c-b696-4728-b348-c42b4cb28878",
+        "sku": "KD-SUIT-CANALI-48"
+      },
+      {
+        "productVariantId": "bc218d31-c90e-48e0-af73-d40a4c6557ed",
+        "sku": "KD-SWT-CASH-S",
+        "availableStock": 8,
+        "productId": "94d8205b-f020-4271-84c5-17cb741783ff"
+      },
+      {
+        "sku": "KD-SWT-CASH-XL",
+        "availableStock": 10,
+        "productId": "94d8205b-f020-4271-84c5-17cb741783ff",
+        "productVariantId": "314c5ac9-631f-4ebb-88f4-ad3c2a5da71e"
+      },
+      {
+        "availableStock": 15,
+        "productId": "94d8205b-f020-4271-84c5-17cb741783ff",
+        "productVariantId": "81d19828-e1eb-4c6d-9f04-12995bb7cc3e",
+        "sku": "KD-SWT-CASH-M"
+      },
+      {
+        "availableStock": 18,
+        "productId": "94d8205b-f020-4271-84c5-17cb741783ff",
+        "productVariantId": "950820a2-53d5-4152-b19a-dc9ae1c5b716",
+        "sku": "KD-SWT-CASH-L"
+      },
+      {
+        "productId": "abe94b2e-a1e4-474f-a435-a1d7b4d966df",
+        "productVariantId": "a3cbcb88-33a5-4062-9764-8eafda922ff6",
+        "sku": "KD-BLZ-LORO-52",
+        "availableStock": 3
+      },
+      {
+        "availableStock": 7,
+        "productId": "abe94b2e-a1e4-474f-a435-a1d7b4d966df",
+        "productVariantId": "18b7eca0-dd52-47a0-9620-6fe54ef48c2c",
+        "sku": "KD-BLZ-LORO-50"
+      },
+      {
+        "availableStock": 4,
+        "productId": "abe94b2e-a1e4-474f-a435-a1d7b4d966df",
+        "productVariantId": "d54ad7c4-4e07-4d50-9348-059008cd9e5f",
+        "sku": "KD-BLZ-LORO-48"
+      },
+      {
+        "productVariantId": "7112ffaa-c02c-4918-81d3-e633fa84ad77",
+        "sku": "KD-SUIT-ZEGNA-48",
+        "availableStock": 8,
+        "productId": "c228b407-cc73-4bbb-9686-55d284127342"
+      },
+      {
+        "productId": "c228b407-cc73-4bbb-9686-55d284127342",
+        "productVariantId": "1925935d-fedb-4fd1-bc68-a00ecc4f8865",
+        "sku": "KD-SUIT-ZEGNA-50",
+        "availableStock": 12
+      },
+      {
+        "sku": "KD-SUIT-ZEGNA-52",
+        "availableStock": 6,
+        "productId": "c228b407-cc73-4bbb-9686-55d284127342",
+        "productVariantId": "d8f97c0a-730f-4509-9c55-990104a59bb5"
+      },
+      {
+        "availableStock": 6,
+        "productId": "c52b0880-21a3-4abd-84e0-a6be6dd983a0",
+        "productVariantId": "0a39d170-7db9-4a53-ad93-18d916855ad3",
+        "sku": "KD-SUIT-BRIONI-48"
+      },
+      {
+        "productId": "c52b0880-21a3-4abd-84e0-a6be6dd983a0",
+        "productVariantId": "f4050dff-6b63-4339-8582-70d663785fb6",
+        "sku": "KD-SUIT-BRIONI-50",
+        "availableStock": 10
+      },
+      {
+        "availableStock": 4,
+        "productId": "c52b0880-21a3-4abd-84e0-a6be6dd983a0",
+        "productVariantId": "a406c561-16dd-4225-9787-c6b2326ef9d7",
+        "sku": "KD-SUIT-BRIONI-54"
+      },
+      {
+        "sku": "KD-SUIT-BRIONI-52",
+        "availableStock": 8,
+        "productId": "c52b0880-21a3-4abd-84e0-a6be6dd983a0",
+        "productVariantId": "cf064a60-feee-44f7-b963-6846cf97d115"
+      },
+      {
+        "availableStock": 16,
+        "productId": "f9182868-9a0b-4c60-8c02-b505ebb7cefd",
+        "productVariantId": "4a4bfec7-b349-431d-be84-0267771ebb7f",
+        "sku": "KD-SHOE-OXF-43"
+      },
+      {
+        "availableStock": 8,
+        "productId": "f9182868-9a0b-4c60-8c02-b505ebb7cefd",
+        "productVariantId": "7297b1fc-2667-4879-a33e-94a7e42c7d72",
+        "sku": "KD-SHOE-OXF-41"
+      },
+      {
+        "availableStock": 9,
+        "productId": "f9182868-9a0b-4c60-8c02-b505ebb7cefd",
+        "productVariantId": "6135cd56-2979-4839-a68b-793aa89ecbdb",
+        "sku": "KD-SHOE-OXF-44"
+      },
+      {
+        "availableStock": 14,
+        "productId": "f9182868-9a0b-4c60-8c02-b505ebb7cefd",
+        "productVariantId": "1cfffa5f-4bb9-4d08-96fe-36c2735093af",
+        "sku": "KD-SHOE-OXF-42"
+      },
+      {
+        "availableStock": 255,
+        "productId": "8b825298-a88b-40d0-80b2-fbf50e7c41c9",
+        "productVariantId": "32c227a3-7fbf-4813-998d-cc14673436f1",
+        "sku": "KD-SUIT-959-V1"
+      },
+      {
+        "availableStock": 10,
+        "productId": "8b825298-a88b-40d0-80b2-fbf50e7c41c9",
+        "productVariantId": "2b7df9de-1ee5-425a-bb67-5f07410f2dc3",
+        "sku": "KD-SUIT-959-V2"
+      },
+      {
+        "availableStock": 13,
+        "productId": "00c083be-25c3-4d54-8dfa-01ddf8ac65b3",
+        "productVariantId": "0d0ab9b8-ab3a-4193-8a28-6f5d70a30f96",
+        "sku": "KD-SUIT-001-50-NVY"
+      },
+      {
+        "productVariantId": "9d65bc10-6587-4fd1-8c00-76c3f663bcb7",
+        "sku": "KD-SUIT-001-52-NVY",
+        "availableStock": 8,
+        "productId": "00c083be-25c3-4d54-8dfa-01ddf8ac65b3"
+      },
+      {
+        "availableStock": 25,
+        "productId": "25bc7481-1b58-4c34-9cd2-35f3ae49fddd",
+        "productVariantId": "7ff0da32-645f-4819-b5b3-5fa0487fcd09",
+        "sku": "KD-SHRT-001-L-WHT"
+      }
+    ]
+  },
+  "root_group": {
+    "id": "d41d8cd98f00b204e9800998ecf8427e",
+    "groups": [
+      {
+        "name": "Cart: Browse, Add, Read, Update & Remove",
+        "path": "::Cart: Browse, Add, Read, Update & Remove",
+        "id": "6116f915330d503bfd1bcc85b60235fa",
+        "groups": [],
+        "checks": [
+            {
+              "name": "product_details: status ok",
+              "path": "::Cart: Browse, Add, Read, Update & Remove::product_details: status ok",
+              "id": "d3c9179bfe28e301095618b3bca2a7bb",
+              "passes": 683,
+              "fails": 0
+            },
+            {
+              "id": "d83fb11b3431995e5c38a509658cb53d",
+              "passes": 683,
+              "fails": 0,
+              "name": "product_details: body non-empty",
+              "path": "::Cart: Browse, Add, Read, Update & Remove::product_details: body non-empty"
+            },
+            {
+              "passes": 683,
+              "fails": 0,
+              "name": "product_details: ApiResponse status=true",
+              "path": "::Cart: Browse, Add, Read, Update & Remove::product_details: ApiResponse status=true",
+              "id": "b491c0d0622e61c6cab6536cf82d4f69"
+            },
+            {
+              "id": "e5bf5e980dcc746077b9bbdb5600edc7",
+              "passes": 644,
+              "fails": 0,
+              "name": "cart_add: status 200",
+              "path": "::Cart: Browse, Add, Read, Update & Remove::cart_add: status 200"
+            },
+            {
+              "name": "cart_add: ApiResponse status=true",
+              "path": "::Cart: Browse, Add, Read, Update & Remove::cart_add: ApiResponse status=true",
+              "id": "2c94ae2d7472e10ade0146897d19d1f9",
+              "passes": 644,
+              "fails": 0
+            },
+            {
+              "name": "cart_get: status ok",
+              "path": "::Cart: Browse, Add, Read, Update & Remove::cart_get: status ok",
+              "id": "82ab9cb1a3563e1c1b988d95def7220e",
+              "passes": 644,
+              "fails": 0
+            },
+            {
+              "name": "cart_get: body non-empty",
+              "path": "::Cart: Browse, Add, Read, Update & Remove::cart_get: body non-empty",
+              "id": "a38cc34d48b902b67719aa306888b887",
+              "passes": 644,
+              "fails": 0
+            },
+            {
+              "path": "::Cart: Browse, Add, Read, Update & Remove::cart_get: ApiResponse status=true",
+              "id": "392e5a25d079062a28c06b98ff185917",
+              "passes": 644,
+              "fails": 0,
+              "name": "cart_get: ApiResponse status=true"
+            },
+            {
+              "name": "cart_update: status ok",
+              "path": "::Cart: Browse, Add, Read, Update & Remove::cart_update: status ok",
+              "id": "69591629139ada2b8e1157ff3fe99ec5",
+              "passes": 612,
+              "fails": 32
+            },
+            {
+              "id": "1e9ba8ffb606d3fe6b7d71a82f1a5f15",
+              "passes": 644,
+              "fails": 0,
+              "name": "cart_update: body non-empty",
+              "path": "::Cart: Browse, Add, Read, Update & Remove::cart_update: body non-empty"
+            },
+            {
+              "path": "::Cart: Browse, Add, Read, Update & Remove::cart_update: ApiResponse status=true",
+              "id": "6d259f77304cde7abf6915561e9e4738",
+              "passes": 612,
+              "fails": 32,
+              "name": "cart_update: ApiResponse status=true"
+            },
+            {
+              "name": "cart_delete: status ok",
+              "path": "::Cart: Browse, Add, Read, Update & Remove::cart_delete: status ok",
+              "id": "99d9791020b722b2bc01be88f94a2f0b",
+              "passes": 644,
+              "fails": 0
+            },
+            {
+              "name": "cart_delete: body non-empty",
+              "path": "::Cart: Browse, Add, Read, Update & Remove::cart_delete: body non-empty",
+              "id": "7e25178c104a049ae6b1df791ccf5709",
+              "passes": 644,
+              "fails": 0
+            },
+            {
+              "name": "cart_delete: ApiResponse status=true",
+              "path": "::Cart: Browse, Add, Read, Update & Remove::cart_delete: ApiResponse status=true",
+              "id": "b751c3838935093ab8e176c8ecbf4a8c",
+              "passes": 644,
+              "fails": 0
+            },
+            {
+              "path": "::Cart: Browse, Add, Read, Update & Remove::cart_add: out-of-stock non-5xx",
+              "id": "ded0e2fae46d5e4f4edec33375b26e0d",
+              "passes": 39,
+              "fails": 0,
+              "name": "cart_add: out-of-stock non-5xx"
+            }
+          ]
+      },
+      {
+        "name": "Checkout: Cart, Calculate, Submit COD Order & Verify",
+        "path": "::Checkout: Cart, Calculate, Submit COD Order & Verify",
+        "id": "fb96e9766089ba32e7c2ed96406c5855",
+        "groups": [],
+        "checks": [
+            {
+              "passes": 189,
+              "fails": 0,
+              "name": "product_details: status ok",
+              "path": "::Checkout: Cart, Calculate, Submit COD Order & Verify::product_details: status ok",
+              "id": "3b07547f68bdc326950c79cf0e361f87"
+            },
+            {
+              "name": "product_details: body non-empty",
+              "path": "::Checkout: Cart, Calculate, Submit COD Order & Verify::product_details: body non-empty",
+              "id": "5793597d55c1dcca77a37269bd388d55",
+              "passes": 189,
+              "fails": 0
+            },
+            {
+              "fails": 0,
+              "name": "product_details: ApiResponse status=true",
+              "path": "::Checkout: Cart, Calculate, Submit COD Order & Verify::product_details: ApiResponse status=true",
+              "id": "d3d86753260fc827bc902f227ec12ef8",
+              "passes": 189
+            },
+            {
+              "name": "cart_clear: status ok",
+              "path": "::Checkout: Cart, Calculate, Submit COD Order & Verify::cart_clear: status ok",
+              "id": "cd92fdc67bb766d1e95ec91cf03746f1",
+              "passes": 189,
+              "fails": 0
+            },
+            {
+              "name": "cart_clear: body non-empty",
+              "path": "::Checkout: Cart, Calculate, Submit COD Order & Verify::cart_clear: body non-empty",
+              "id": "95e10323e21a8af492180bd94253a57f",
+              "passes": 189,
+              "fails": 0
+            },
+            {
+              "passes": 189,
+              "fails": 0,
+              "name": "cart_clear: ApiResponse status=true",
+              "path": "::Checkout: Cart, Calculate, Submit COD Order & Verify::cart_clear: ApiResponse status=true",
+              "id": "fadc47bf483ba380bdf1e12bdfa5f483"
+            },
+            {
+              "name": "checkout cart_add: status 200",
+              "path": "::Checkout: Cart, Calculate, Submit COD Order & Verify::checkout cart_add: status 200",
+              "id": "9921eab881df4e3bbcae44e2807bf65e",
+              "passes": 182,
+              "fails": 0
+            },
+            {
+              "name": "checkout cart_add: ApiResponse status=true",
+              "path": "::Checkout: Cart, Calculate, Submit COD Order & Verify::checkout cart_add: ApiResponse status=true",
+              "id": "4e71a167f7e1289dc67f5cea512aeea5",
+              "passes": 182,
+              "fails": 0
+            },
+            {
+              "name": "cart_get: status ok",
+              "path": "::Checkout: Cart, Calculate, Submit COD Order & Verify::cart_get: status ok",
+              "id": "a882f99bd0b4e138cd30f50ceeedd848",
+              "passes": 182,
+              "fails": 0
+            },
+            {
+              "fails": 0,
+              "name": "cart_get: body non-empty",
+              "path": "::Checkout: Cart, Calculate, Submit COD Order & Verify::cart_get: body non-empty",
+              "id": "e5ebdb90eeec4179bb551edc920e5ccd",
+              "passes": 182
+            },
+            {
+              "name": "cart_get: ApiResponse status=true",
+              "path": "::Checkout: Cart, Calculate, Submit COD Order & Verify::cart_get: ApiResponse status=true",
+              "id": "9c3adf79e1858ff458d30a2f8201ebea",
+              "passes": 182,
+              "fails": 0
+            },
+            {
+              "name": "checkout_calculate: status ok",
+              "path": "::Checkout: Cart, Calculate, Submit COD Order & Verify::checkout_calculate: status ok",
+              "id": "c4c2e3fa985f9c8d9e0c999bbca80571",
+              "passes": 182,
+              "fails": 0
+            },
+            {
+              "fails": 0,
+              "name": "checkout_calculate: body non-empty",
+              "path": "::Checkout: Cart, Calculate, Submit COD Order & Verify::checkout_calculate: body non-empty",
+              "id": "e7081dc0a8586773ab374109c6cd742d",
+              "passes": 182
+            },
+            {
+              "name": "checkout_calculate: ApiResponse status=true",
+              "path": "::Checkout: Cart, Calculate, Submit COD Order & Verify::checkout_calculate: ApiResponse status=true",
+              "id": "fa4ed18b5cc65ba3b9099b461623ebf3",
+              "passes": 182,
+              "fails": 0
+            },
+            {
+              "id": "095999d2d11c933536be54e2ea0de2f5",
+              "passes": 181,
+              "fails": 0,
+              "name": "checkout_create: status 201",
+              "path": "::Checkout: Cart, Calculate, Submit COD Order & Verify::checkout_create: status 201"
+            },
+            {
+              "path": "::Checkout: Cart, Calculate, Submit COD Order & Verify::checkout_create: ApiResponse status=true",
+              "id": "ac35cf17a30f2fe201dcf95472fe5146",
+              "passes": 181,
+              "fails": 0,
+              "name": "checkout_create: ApiResponse status=true"
+            },
+            {
+              "passes": 181,
+              "fails": 0,
+              "name": "checkout_create: returned orderId",
+              "path": "::Checkout: Cart, Calculate, Submit COD Order & Verify::checkout_create: returned orderId",
+              "id": "31538fe0117022a5adb2568e45236bc6"
+            },
+            {
+              "name": "order_details: status ok",
+              "path": "::Checkout: Cart, Calculate, Submit COD Order & Verify::order_details: status ok",
+              "id": "990a4e0c1b6015c126ec8432b9cd1d4c",
+              "passes": 181,
+              "fails": 0
+            },
+            {
+              "name": "order_details: body non-empty",
+              "path": "::Checkout: Cart, Calculate, Submit COD Order & Verify::order_details: body non-empty",
+              "id": "771f54f14093d5b31f85abe79d12e54b",
+              "passes": 181,
+              "fails": 0
+            },
+            {
+              "path": "::Checkout: Cart, Calculate, Submit COD Order & Verify::order_details: ApiResponse status=true",
+              "id": "eb0bc1ad008efda66d3ca441d3acd593",
+              "passes": 181,
+              "fails": 0,
+              "name": "order_details: ApiResponse status=true"
+            },
+            {
+              "name": "checkout cart_add: out-of-stock non-5xx",
+              "path": "::Checkout: Cart, Calculate, Submit COD Order & Verify::checkout cart_add: out-of-stock non-5xx",
+              "id": "f4d6211433ca25f8431f7628abbe1a46",
+              "passes": 7,
+              "fails": 0
+            },
+            {
+              "id": "186d96b7bf19dedd62e3051d98043060",
+              "passes": 1,
+              "fails": 0,
+              "name": "checkout_create: out-of-stock non-5xx",
+              "path": "::Checkout: Cart, Calculate, Submit COD Order & Verify::checkout_create: out-of-stock non-5xx"
+            }
+          ]
+      }
+    ],
+    "checks": [
+      {
+        "passes": 45,
+        "fails": 0,
+        "name": "auth register ok or conflict",
+        "path": "::auth register ok or conflict",
+        "id": "d00e17b5ee60ee7dd66cad58e4637e96"
+      },
+      {
+        "fails": 0,
+        "name": "auth login status 200",
+        "path": "::auth login status 200",
+        "id": "6d03eaaf19ec176ae2e8e6910ad93a83",
+        "passes": 45
+      },
+      {
+        "path": "::auth login issued JWT token",
+        "id": "2bb06f27a3a1d08df483df52da13f7e0",
+        "passes": 45,
+        "fails": 0,
+        "name": "auth login issued JWT token"
+      }
+    ],
+    "name": "",
+    "path": ""
+  }
+}

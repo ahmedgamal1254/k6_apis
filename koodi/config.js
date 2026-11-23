@@ -24,7 +24,37 @@ function loadEnv() {
 }
 
 const dotEnv = loadEnv();
-export const BASE_URL = __ENV.BASE_URL || dotEnv.BASE_URL || 'https://koodiapi.sumt.net';
+
+function getEnvValue(key, fallback) {
+  if (__ENV[key] !== undefined && __ENV[key] !== '') return __ENV[key];
+  if (dotEnv[key] !== undefined && dotEnv[key] !== '') return dotEnv[key];
+  return fallback;
+}
+
+function parseIntEnv(key, fallback) {
+  const raw = getEnvValue(key, undefined);
+  if (raw === undefined) return fallback;
+  const parsed = Number.parseInt(String(raw), 10);
+  return Number.isFinite(parsed) && parsed >= 0 ? parsed : fallback;
+}
+
+function parseBoolEnv(key, fallback = false) {
+  const raw = getEnvValue(key, undefined);
+  if (raw === undefined) return fallback;
+  return String(raw).trim().toLowerCase() === 'true';
+}
+
+export const BASE_URL = String(getEnvValue('BASE_URL', 'https://koodiapi.sumt.net')).replace(/\/+$/, '');
+export const CART_VUS = parseIntEnv('CART_VUS', 30);
+export const CHECKOUT_VUS = parseIntEnv('CHECKOUT_VUS', 15);
+export const AUTH_VUS = parseIntEnv('AUTH_VUS', 10);
+export const DRY_RUN_CHECKOUT = parseBoolEnv('DRY_RUN_CHECKOUT', false);
+export const DEBUG = parseBoolEnv('DEBUG', false);
+export const TEST_PHONE = getEnvValue('TEST_PHONE', '');
+export const TEST_PASSWORD = getEnvValue('TEST_PASSWORD', 'K6TestUser!2026');
+
+export const LANGUAGES = ['ar', 'en', 'ku'];
+export const GOVERNORATES = ['baghdad', 'erbil', 'basra', 'sulaymaniyah', 'najaf'];
 
 // Main focus: Public Koodi API endpoints (no login required)
 export const PUBLIC_ENDPOINTS = [
@@ -51,24 +81,69 @@ export const AUTH_ENDPOINTS = [
   { name: 'auth_login', path: '/api/v1/auth/login' },
 ];
 
-// Main load profile: up to 50 users
+// Stateful shopper cart endpoints (tested at CART_VUS, default 30 peak = 20% of 150)
+export const CART_ENDPOINTS = [
+  { name: 'product_details', path: '/api/v1/products/{id}' },
+  { name: 'cart_add', path: '/api/v1/cart/items' },
+  { name: 'cart_get', path: '/api/v1/cart' },
+  { name: 'cart_update', path: '/api/v1/cart/items/{id}' },
+  { name: 'cart_delete', path: '/api/v1/cart/items/{id}' },
+  { name: 'cart_clear', path: '/api/v1/cart' },
+];
+
+// Transaction checkout endpoints (tested at CHECKOUT_VUS, default 15 peak = 10% of 150)
+export const CHECKOUT_ENDPOINTS = [
+  { name: 'checkout_calculate', path: '/api/v1/orders/checkout/calculate' },
+  { name: 'checkout_create', path: '/api/v1/orders/checkout' },
+  { name: 'order_details', path: '/api/v1/orders/{id}' },
+];
+
+export const ALL_ENDPOINTS = [
+  ...PUBLIC_ENDPOINTS,
+  ...AUTH_ENDPOINTS,
+  ...CART_ENDPOINTS,
+  ...CHECKOUT_ENDPOINTS,
+];
+
+// Main load profile: up to 150 public VUs
 export const PUBLIC_LOAD_STAGES = [
   { duration: '30s', target: 15 }, // Warm up to 15 VUs
   { duration: '1m', target: 35 },  // Ramp up to 35 VUs
   { duration: '2m', target: 50 },  // Peak load at 50 VUs
   { duration: '1m', target: 50 },  // Hold 50 VUs
-  { duration: '1m', target: 100 }, 
-  { duration: '1m', target: 150 }, 
-  // { duration: '6m', target: 175 }, 
-  // { duration: '3m', target: 200},  
-  // { duration: '5m', target: 250},
-  { duration: '1m', target: 10},
+  { duration: '1m', target: 100 },
+  { duration: '1m', target: 150 },
+  // { duration: '6m', target: 175 },
+  // { duration: '3m', target: 200 },
+  // { duration: '5m', target: 250 },
+  { duration: '1m', target: 10 },
   { duration: '30s', target: 0 },  // Ramp down to 0 VUs
 ];
+
+export function scaleStages(baseStages, peakTarget, basePeak = 150) {
+  if (peakTarget <= 0) {
+    return [{ duration: '1s', target: 0 }];
+  }
+  return baseStages.map((stage) => ({
+    duration: stage.duration,
+    target:
+      stage.target <= 0
+        ? 0
+        : Math.max(1, Math.round((stage.target / basePeak) * peakTarget)),
+  }));
+}
+
+export const CART_LOAD_STAGES = scaleStages(PUBLIC_LOAD_STAGES, CART_VUS, 150);
+export const CHECKOUT_LOAD_STAGES = scaleStages(PUBLIC_LOAD_STAGES, CHECKOUT_VUS, 150);
 
 export const THRESHOLDS = {
   http_req_failed: ['rate<0.05'],
   http_req_duration: ['p(95)<1500'],
   koodi_success_rate: ['rate>0.95'],
   koodi_req_duration: ['p(95)<1500'],
+  'http_req_duration{scenario:public_load}': ['p(95)<1500'],
+  'http_req_duration{scenario:cart_load}': ['p(95)<1200'],
+  'http_req_duration{scenario:checkout_load}': ['p(95)<2000'],
+  koodi_cart_success_rate: ['rate>0.95'],
+  koodi_checkout_success_rate: ['rate>0.95'],
 };
