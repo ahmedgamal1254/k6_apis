@@ -2,3 +2,5 @@
 /kenzi/results
 /koodi/results
 /beeto/results
+*.csv
+*.json

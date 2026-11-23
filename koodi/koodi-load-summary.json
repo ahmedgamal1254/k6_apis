@@ -1,371 +1,874 @@
 {
+  "setup_data": {
+    "inStockVariants": [
+      {
+        "availableStock": 10,
+        "productId": "1d928d4f-e845-4829-b8ef-4b61d36acee3",
+        "productVariantId": "76bed7f7-9baf-448c-acd4-9ad14f2bf7db",
+        "sku": "KD-SHRT-GIZA-XL"
+      },
+      {
+        "availableStock": 19,
+        "productId": "1d928d4f-e845-4829-b8ef-4b61d36acee3",
+        "productVariantId": "13592eb8-12ea-4477-bdad-4b6efab12b99",
+        "sku": "KD-SHRT-GIZA-M"
+      },
+      {
+        "productVariantId": "9757401d-92cf-4d18-9083-4f2be3157005",
+        "sku": "KD-SHRT-GIZA-S",
+        "availableStock": 12,
+        "productId": "1d928d4f-e845-4829-b8ef-4b61d36acee3"
+      },
+      {
+        "productVariantId": "94e59149-2821-4d82-82a5-3ea22ae611aa",
+        "sku": "KD-SHRT-GIZA-L",
+        "availableStock": 21,
+        "productId": "1d928d4f-e845-4829-b8ef-4b61d36acee3"
+      },
+      {
+        "productId": "2d97eed1-71f6-4463-9be8-2e71c15ed90e",
+        "productVariantId": "aceb602f-cb7c-418e-80d4-62676259bb52",
+        "sku": "KD-SHOE-LOAF-42",
+        "availableStock": 8
+      },
+      {
+        "availableStock": 5,
+        "productId": "2d97eed1-71f6-4463-9be8-2e71c15ed90e",
+        "productVariantId": "31184030-9907-4d93-8bf3-c379870e0b61",
+        "sku": "KD-SHOE-LOAF-43"
+      },
+      {
+        "availableStock": 4,
+        "productId": "6bd66d82-d6c3-4952-acab-39ead044e1f4",
+        "productVariantId": "d6030b09-9bc3-4b2a-afc6-16b570263cc4",
+        "sku": "KD-TUX-TOMFORD-52"
+      },
+      {
+        "availableStock": 1,
+        "productId": "7689ff06-53c2-4f88-91e0-8b544746a26d",
+        "productVariantId": "1a5dc584-46d5-40c7-8248-2341c0dee066",
+        "sku": "KD-SHRT-BLUE-S"
+      },
+      {
+        "availableStock": 16,
+        "productId": "7689ff06-53c2-4f88-91e0-8b544746a26d",
+        "productVariantId": "0d3d9378-7801-4532-999e-726ce0d2b259",
+        "sku": "KD-SHRT-BLUE-L"
+      },
+      {
+        "availableStock": 15,
+        "productId": "7689ff06-53c2-4f88-91e0-8b544746a26d",
+        "productVariantId": "979658e0-2797-4ce7-bb10-97495f06444b",
+        "sku": "KD-SHRT-BLUE-M"
+      },
+      {
+        "availableStock": 3,
+        "productId": "7689ff06-53c2-4f88-91e0-8b544746a26d",
+        "productVariantId": "266405d0-f4cc-46e6-a3a1-ab49cd08c795",
+        "sku": "KD-SHRT-BLUE-XL"
+      },
+      {
+        "sku": "KD-SUIT-CANALI-48",
+        "availableStock": 1,
+        "productId": "8b90893f-e4ee-47e2-bb9d-efec6583bfce",
+        "productVariantId": "5b85916c-b696-4728-b348-c42b4cb28878"
+      },
+      {
+        "availableStock": 4,
+        "productId": "8b90893f-e4ee-47e2-bb9d-efec6583bfce",
+        "productVariantId": "cff78e56-bf2f-4e95-a318-147afa96080d",
+        "sku": "KD-SUIT-CANALI-50"
+      },
+      {
+        "sku": "KD-SUIT-CANALI-52",
+        "availableStock": 7,
+        "productId": "8b90893f-e4ee-47e2-bb9d-efec6583bfce",
+        "productVariantId": "36e57ca4-3c5f-4273-b453-b4043e0938a4"
+      },
+      {
+        "sku": "KD-SWT-CASH-S",
+        "availableStock": 3,
+        "productId": "94d8205b-f020-4271-84c5-17cb741783ff",
+        "productVariantId": "bc218d31-c90e-48e0-af73-d40a4c6557ed"
+      },
+      {
+        "availableStock": 5,
+        "productId": "94d8205b-f020-4271-84c5-17cb741783ff",
+        "productVariantId": "314c5ac9-631f-4ebb-88f4-ad3c2a5da71e",
+        "sku": "KD-SWT-CASH-XL"
+      },
+      {
+        "availableStock": 9,
+        "productId": "94d8205b-f020-4271-84c5-17cb741783ff",
+        "productVariantId": "81d19828-e1eb-4c6d-9f04-12995bb7cc3e",
+        "sku": "KD-SWT-CASH-M"
+      },
+      {
+        "availableStock": 13,
+        "productId": "94d8205b-f020-4271-84c5-17cb741783ff",
+        "productVariantId": "950820a2-53d5-4152-b19a-dc9ae1c5b716",
+        "sku": "KD-SWT-CASH-L"
+      },
+      {
+        "availableStock": 4,
+        "productId": "c228b407-cc73-4bbb-9686-55d284127342",
+        "productVariantId": "1925935d-fedb-4fd1-bc68-a00ecc4f8865",
+        "sku": "KD-SUIT-ZEGNA-50"
+      },
+      {
+        "availableStock": 4,
+        "productId": "c52b0880-21a3-4abd-84e0-a6be6dd983a0",
+        "productVariantId": "cf064a60-feee-44f7-b963-6846cf97d115",
+        "sku": "KD-SUIT-BRIONI-52"
+      },
+      {
+        "availableStock": 6,
+        "productId": "c52b0880-21a3-4abd-84e0-a6be6dd983a0",
+        "productVariantId": "f4050dff-6b63-4339-8582-70d663785fb6",
+        "sku": "KD-SUIT-BRIONI-50"
+      },
+      {
+        "availableStock": 3,
+        "productId": "c52b0880-21a3-4abd-84e0-a6be6dd983a0",
+        "productVariantId": "0a39d170-7db9-4a53-ad93-18d916855ad3",
+        "sku": "KD-SUIT-BRIONI-48"
+      },
+      {
+        "productVariantId": "6135cd56-2979-4839-a68b-793aa89ecbdb",
+        "sku": "KD-SHOE-OXF-44",
+        "availableStock": 7,
+        "productId": "f9182868-9a0b-4c60-8c02-b505ebb7cefd"
+      },
+      {
+        "availableStock": 9,
+        "productId": "f9182868-9a0b-4c60-8c02-b505ebb7cefd",
+        "productVariantId": "4a4bfec7-b349-431d-be84-0267771ebb7f",
+        "sku": "KD-SHOE-OXF-43"
+      },
+      {
+        "availableStock": 4,
+        "productId": "f9182868-9a0b-4c60-8c02-b505ebb7cefd",
+        "productVariantId": "7297b1fc-2667-4879-a33e-94a7e42c7d72",
+        "sku": "KD-SHOE-OXF-41"
+      },
+      {
+        "availableStock": 7,
+        "productId": "f9182868-9a0b-4c60-8c02-b505ebb7cefd",
+        "productVariantId": "1cfffa5f-4bb9-4d08-96fe-36c2735093af",
+        "sku": "KD-SHOE-OXF-42"
+      },
+      {
+        "availableStock": 8,
+        "productId": "8b825298-a88b-40d0-80b2-fbf50e7c41c9",
+        "productVariantId": "2b7df9de-1ee5-425a-bb67-5f07410f2dc3",
+        "sku": "KD-SUIT-959-V2"
+      },
+      {
+        "sku": "KD-SUIT-959-V1",
+        "availableStock": 253,
+        "productId": "8b825298-a88b-40d0-80b2-fbf50e7c41c9",
+        "productVariantId": "32c227a3-7fbf-4813-998d-cc14673436f1"
+      },
+      {
+        "availableStock": 2,
+        "productId": "00c083be-25c3-4d54-8dfa-01ddf8ac65b3",
+        "productVariantId": "9d65bc10-6587-4fd1-8c00-76c3f663bcb7",
+        "sku": "KD-SUIT-001-52-NVY"
+      },
+      {
+        "availableStock": 11,
+        "productId": "00c083be-25c3-4d54-8dfa-01ddf8ac65b3",
+        "productVariantId": "0d0ab9b8-ab3a-4193-8a28-6f5d70a30f96",
+        "sku": "KD-SUIT-001-50-NVY"
+      },
+      {
+        "productId": "25bc7481-1b58-4c34-9cd2-35f3ae49fddd",
+        "productVariantId": "7ff0da32-645f-4819-b5b3-5fa0487fcd09",
+        "sku": "KD-SHRT-001-L-WHT",
+        "availableStock": 20
+      }
+    ],
+    "productIds": [
+      "1d928d4f-e845-4829-b8ef-4b61d36acee3",
+      "2d97eed1-71f6-4463-9be8-2e71c15ed90e",
+      "6bd66d82-d6c3-4952-acab-39ead044e1f4",
+      "7689ff06-53c2-4f88-91e0-8b544746a26d",
+      "8b90893f-e4ee-47e2-bb9d-efec6583bfce",
+      "94d8205b-f020-4271-84c5-17cb741783ff",
+      "c228b407-cc73-4bbb-9686-55d284127342",
+      "c52b0880-21a3-4abd-84e0-a6be6dd983a0",
+      "f9182868-9a0b-4c60-8c02-b505ebb7cefd",
+      "8b825298-a88b-40d0-80b2-fbf50e7c41c9",
+      "00c083be-25c3-4d54-8dfa-01ddf8ac65b3",
+      "25bc7481-1b58-4c34-9cd2-35f3ae49fddd",
+      "0613f1f5-d8f5-4ebb-932c-de77e54d0152",
+      "54ac92c0-17b6-44eb-bac1-001624c7d57a"
+    ]
+  },
   "root_group": {
-    "checks": [],
-    "name": "",
-    "path": "",
     "id": "d41d8cd98f00b204e9800998ecf8427e",
     "groups": [
-        {
-          "path": "::Public: health",
-          "id": "bade4e5fec241347d8b80c18efd5debd",
-          "groups": [],
-          "checks": [
-              {
-                "fails": 0,
-                "name": "status is 2xx/3xx",
-                "path": "::Public: health::status is 2xx/3xx",
-                "id": "1252d3d32f81e6d71dd6278930ad82a6",
-                "passes": 169187
-              },
-              {
-                "name": "response body not empty",
-                "path": "::Public: health::response body not empty",
-                "id": "0fd257fdb446b0dd93bb9e057f53d8eb",
-                "passes": 169187,
-                "fails": 0
-              }
-            ],
-          "name": "Public: health"
-        },
-        {
-          "name": "Auth: register (light)",
-          "path": "::Auth: register (light)",
-          "id": "f05c4ec56d6193ee6f992dda90c261a1",
-          "groups": [],
-          "checks": [
-              {
-                "name": "register status is 2xx/409",
-                "path": "::Auth: register (light)::register status is 2xx/409",
-                "id": "f46033129b36f08e4dfeecfd0b2f4378",
-                "passes": 107889,
-                "fails": 0
-              }
-            ]
-        },
-        {
-          "name": "Auth: login (light)",
-          "path": "::Auth: login (light)",
-          "id": "f6e97c3a21db91a79b86f97403a65dcc",
-          "groups": [],
-          "checks": [
-              {
-                "path": "::Auth: login (light)::login status is 2xx",
-                "id": "261316c75465ec821f1cd5de7811a03e",
-                "passes": 107889,
-                "fails": 0,
-                "name": "login status is 2xx"
-              }
-            ]
-        },
-        {
-          "name": "Public: home",
-          "path": "::Public: home",
-          "id": "a4e91044dd0d4722cd885056ade0192a",
-          "groups": [],
-          "checks": [
-              {
-                "name": "status is 2xx/3xx",
-                "path": "::Public: home::status is 2xx/3xx",
-                "id": "55a18fe3f52ddcb2394e3746365b9d46",
-                "passes": 169187,
-                "fails": 0
-              },
-              {
-                "fails": 0,
-                "name": "response body not empty",
-                "path": "::Public: home::response body not empty",
-                "id": "5601e3af0f3418bb8d8dbe58d0e7ab4e",
-                "passes": 169187
-              }
-            ]
-        },
-        {
-          "id": "0994609c230a3e7125cb287a127209f5",
-          "groups": [],
-          "checks": [
-              {
-                "name": "status is 2xx/3xx",
-                "path": "::Public: home_banners::status is 2xx/3xx",
-                "id": "9f84ca888e42dd4d9f956ba2cc322c62",
-                "passes": 169187,
-                "fails": 0
-              },
-              {
-                "passes": 169187,
-                "fails": 0,
-                "name": "response body not empty",
-                "path": "::Public: home_banners::response body not empty",
-                "id": "51828613ead847a2d0491085d55d969e"
-              }
-            ],
-          "name": "Public: home_banners",
-          "path": "::Public: home_banners"
-        },
-        {
-          "name": "Public: home_categories",
-          "path": "::Public: home_categories",
-          "id": "a8d71c61877d64d0878645dd768b9e0c",
-          "groups": [],
-          "checks": [
-              {
-                "name": "status is 2xx/3xx",
-                "path": "::Public: home_categories::status is 2xx/3xx",
-                "id": "d6ec7142859e202191f253649252be2f",
-                "passes": 169187,
-                "fails": 0
-              },
-              {
-                "passes": 169187,
-                "fails": 0,
-                "name": "response body not empty",
-                "path": "::Public: home_categories::response body not empty",
-                "id": "33a69595c5318bf691a0eb319db61de9"
-              }
-            ]
-        },
-        {
-          "path": "::Public: home_new_arrivals",
-          "id": "c8b44dfe1a6110bd12f1102c4e80da36",
-          "groups": [],
-          "checks": [
-              {
-                "fails": 0,
-                "name": "status is 2xx/3xx",
-                "path": "::Public: home_new_arrivals::status is 2xx/3xx",
-                "id": "810ad6139a9d07443a5e3db8afa553c8",
-                "passes": 169187
-              },
-              {
-                "fails": 0,
-                "name": "response body not empty",
-                "path": "::Public: home_new_arrivals::response body not empty",
-                "id": "511e07de7e8f672f14fa7df7d825abbb",
-                "passes": 169187
-              }
-            ],
-          "name": "Public: home_new_arrivals"
-        },
-        {
-          "path": "::Public: home_best_sellers",
-          "id": "40e1f40ac09cab53ae682b22db8e3367",
-          "groups": [],
-          "checks": [
-              {
-                "name": "status is 2xx/3xx",
-                "path": "::Public: home_best_sellers::status is 2xx/3xx",
-                "id": "f554564c3a79837fd5dd6d28b17141d1",
-                "passes": 169187,
-                "fails": 0
-              },
-              {
-                "name": "response body not empty",
-                "path": "::Public: home_best_sellers::response body not empty",
-                "id": "e1586011960eabab4545ba3447622d2b",
-                "passes": 169187,
-                "fails": 0
-              }
-            ],
-          "name": "Public: home_best_sellers"
-        },
-        {
-          "id": "0561b0b25371d328a67b0a61b7b4a64b",
-          "groups": [],
-          "checks": [
-              {
-                "name": "status is 2xx/3xx",
-                "path": "::Public: home_recommended::status is 2xx/3xx",
-                "id": "a7bee35f28335b1eab17a48802edad5f",
-                "passes": 169187,
-                "fails": 0
-              },
-              {
-                "name": "response body not empty",
-                "path": "::Public: home_recommended::response body not empty",
-                "id": "b59a8c126f9f5c9e2040961c85bf4422",
-                "passes": 169187,
-                "fails": 0
-              }
-            ],
-          "name": "Public: home_recommended",
-          "path": "::Public: home_recommended"
-        },
-        {
-          "checks": [
+      {
+        "name": "Public: health",
+        "path": "::Public: health",
+        "id": "bade4e5fec241347d8b80c18efd5debd",
+        "groups": [],
+        "checks": [
             {
+              "id": "1252d3d32f81e6d71dd6278930ad82a6",
+              "passes": 125137,
               "fails": 0,
               "name": "status is 2xx/3xx",
-              "path": "::Public: home_similar_vibes::status is 2xx/3xx",
-              "id": "059d5636c6cbc4ec36cf5e1dd6b776b6",
-              "passes": 169187
+              "path": "::Public: health::status is 2xx/3xx"
+            },
+            {
+              "name": "response body not empty",
+              "path": "::Public: health::response body not empty",
+              "id": "0fd257fdb446b0dd93bb9e057f53d8eb",
+              "passes": 125137,
+              "fails": 0
+            }
+          ]
+      },
+      {
+        "id": "f05c4ec56d6193ee6f992dda90c261a1",
+        "groups": [],
+        "checks": [
+            {
+              "id": "f46033129b36f08e4dfeecfd0b2f4378",
+              "passes": 114122,
+              "fails": 0,
+              "name": "register status is 2xx/409",
+              "path": "::Auth: register (light)::register status is 2xx/409"
+            }
+          ],
+        "name": "Auth: register (light)",
+        "path": "::Auth: register (light)"
+      },
+      {
+        "name": "Auth: login (light)",
+        "path": "::Auth: login (light)",
+        "id": "f6e97c3a21db91a79b86f97403a65dcc",
+        "groups": [],
+        "checks": [
+            {
+              "passes": 114122,
+              "fails": 0,
+              "name": "login status is 2xx",
+              "path": "::Auth: login (light)::login status is 2xx",
+              "id": "261316c75465ec821f1cd5de7811a03e"
+            }
+          ]
+      },
+      {
+        "name": "Checkout: Cart, Calculate, Submit COD Order & Verify",
+        "path": "::Checkout: Cart, Calculate, Submit COD Order & Verify",
+        "id": "fb96e9766089ba32e7c2ed96406c5855",
+        "groups": [],
+        "checks": [
+            {
+              "fails": 0,
+              "name": "product_details: status ok",
+              "path": "::Checkout: Cart, Calculate, Submit COD Order & Verify::product_details: status ok",
+              "id": "3b07547f68bdc326950c79cf0e361f87",
+              "passes": 210
+            },
+            {
+              "name": "product_details: body non-empty",
+              "path": "::Checkout: Cart, Calculate, Submit COD Order & Verify::product_details: body non-empty",
+              "id": "5793597d55c1dcca77a37269bd388d55",
+              "passes": 210,
+              "fails": 0
+            },
+            {
+              "id": "d3d86753260fc827bc902f227ec12ef8",
+              "passes": 210,
+              "fails": 0,
+              "name": "product_details: ApiResponse status=true",
+              "path": "::Checkout: Cart, Calculate, Submit COD Order & Verify::product_details: ApiResponse status=true"
+            },
+            {
+              "fails": 0,
+              "name": "cart_clear: status ok",
+              "path": "::Checkout: Cart, Calculate, Submit COD Order & Verify::cart_clear: status ok",
+              "id": "cd92fdc67bb766d1e95ec91cf03746f1",
+              "passes": 210
+            },
+            {
+              "name": "cart_clear: body non-empty",
+              "path": "::Checkout: Cart, Calculate, Submit COD Order & Verify::cart_clear: body non-empty",
+              "id": "95e10323e21a8af492180bd94253a57f",
+              "passes": 210,
+              "fails": 0
+            },
+            {
+              "passes": 210,
+              "fails": 0,
+              "name": "cart_clear: ApiResponse status=true",
+              "path": "::Checkout: Cart, Calculate, Submit COD Order & Verify::cart_clear: ApiResponse status=true",
+              "id": "fadc47bf483ba380bdf1e12bdfa5f483"
+            },
+            {
+              "passes": 164,
+              "fails": 0,
+              "name": "checkout cart_add: status 200",
+              "path": "::Checkout: Cart, Calculate, Submit COD Order & Verify::checkout cart_add: status 200",
+              "id": "9921eab881df4e3bbcae44e2807bf65e"
+            },
+            {
+              "id": "4e71a167f7e1289dc67f5cea512aeea5",
+              "passes": 164,
+              "fails": 0,
+              "name": "checkout cart_add: ApiResponse status=true",
+              "path": "::Checkout: Cart, Calculate, Submit COD Order & Verify::checkout cart_add: ApiResponse status=true"
+            },
+            {
+              "fails": 0,
+              "name": "cart_get: status ok",
+              "path": "::Checkout: Cart, Calculate, Submit COD Order & Verify::cart_get: status ok",
+              "id": "a882f99bd0b4e138cd30f50ceeedd848",
+              "passes": 164
+            },
+            {
+              "fails": 0,
+              "name": "cart_get: body non-empty",
+              "path": "::Checkout: Cart, Calculate, Submit COD Order & Verify::cart_get: body non-empty",
+              "id": "e5ebdb90eeec4179bb551edc920e5ccd",
+              "passes": 164
+            },
+            {
+              "name": "cart_get: ApiResponse status=true",
+              "path": "::Checkout: Cart, Calculate, Submit COD Order & Verify::cart_get: ApiResponse status=true",
+              "id": "9c3adf79e1858ff458d30a2f8201ebea",
+              "passes": 164,
+              "fails": 0
+            },
+            {
+              "name": "checkout_calculate: status ok",
+              "path": "::Checkout: Cart, Calculate, Submit COD Order & Verify::checkout_calculate: status ok",
+              "id": "c4c2e3fa985f9c8d9e0c999bbca80571",
+              "passes": 164,
+              "fails": 0
+            },
+            {
+              "path": "::Checkout: Cart, Calculate, Submit COD Order & Verify::checkout_calculate: body non-empty",
+              "id": "e7081dc0a8586773ab374109c6cd742d",
+              "passes": 164,
+              "fails": 0,
+              "name": "checkout_calculate: body non-empty"
+            },
+            {
+              "id": "fa4ed18b5cc65ba3b9099b461623ebf3",
+              "passes": 164,
+              "fails": 0,
+              "name": "checkout_calculate: ApiResponse status=true",
+              "path": "::Checkout: Cart, Calculate, Submit COD Order & Verify::checkout_calculate: ApiResponse status=true"
+            },
+            {
+              "passes": 163,
+              "fails": 0,
+              "name": "checkout_create: status 201",
+              "path": "::Checkout: Cart, Calculate, Submit COD Order & Verify::checkout_create: status 201",
+              "id": "095999d2d11c933536be54e2ea0de2f5"
+            },
+            {
+              "name": "checkout_create: ApiResponse status=true",
+              "path": "::Checkout: Cart, Calculate, Submit COD Order & Verify::checkout_create: ApiResponse status=true",
+              "id": "ac35cf17a30f2fe201dcf95472fe5146",
+              "passes": 163,
+              "fails": 0
+            },
+            {
+              "id": "31538fe0117022a5adb2568e45236bc6",
+              "passes": 163,
+              "fails": 0,
+              "name": "checkout_create: returned orderId",
+              "path": "::Checkout: Cart, Calculate, Submit COD Order & Verify::checkout_create: returned orderId"
+            },
+            {
+              "name": "order_details: status ok",
+              "path": "::Checkout: Cart, Calculate, Submit COD Order & Verify::order_details: status ok",
+              "id": "990a4e0c1b6015c126ec8432b9cd1d4c",
+              "passes": 163,
+              "fails": 0
+            },
+            {
+              "passes": 163,
+              "fails": 0,
+              "name": "order_details: body non-empty",
+              "path": "::Checkout: Cart, Calculate, Submit COD Order & Verify::order_details: body non-empty",
+              "id": "771f54f14093d5b31f85abe79d12e54b"
+            },
+            {
+              "path": "::Checkout: Cart, Calculate, Submit COD Order & Verify::order_details: ApiResponse status=true",
+              "id": "eb0bc1ad008efda66d3ca441d3acd593",
+              "passes": 163,
+              "fails": 0,
+              "name": "order_details: ApiResponse status=true"
+            },
+            {
+              "name": "checkout cart_add: out-of-stock non-5xx",
+              "path": "::Checkout: Cart, Calculate, Submit COD Order & Verify::checkout cart_add: out-of-stock non-5xx",
+              "id": "f4d6211433ca25f8431f7628abbe1a46",
+              "passes": 46,
+              "fails": 0
+            },
+            {
+              "name": "checkout_create: out-of-stock non-5xx",
+              "path": "::Checkout: Cart, Calculate, Submit COD Order & Verify::checkout_create: out-of-stock non-5xx",
+              "id": "186d96b7bf19dedd62e3051d98043060",
+              "passes": 1,
+              "fails": 0
+            }
+          ]
+      },
+      {
+        "path": "::Cart: Browse, Add, Read, Update & Remove",
+        "id": "6116f915330d503bfd1bcc85b60235fa",
+        "groups": [],
+        "checks": [
+            {
+              "fails": 0,
+              "name": "product_details: status ok",
+              "path": "::Cart: Browse, Add, Read, Update & Remove::product_details: status ok",
+              "id": "d3c9179bfe28e301095618b3bca2a7bb",
+              "passes": 741
+            },
+            {
+              "fails": 0,
+              "name": "product_details: body non-empty",
+              "path": "::Cart: Browse, Add, Read, Update & Remove::product_details: body non-empty",
+              "id": "d83fb11b3431995e5c38a509658cb53d",
+              "passes": 741
+            },
+            {
+              "fails": 0,
+              "name": "product_details: ApiResponse status=true",
+              "path": "::Cart: Browse, Add, Read, Update & Remove::product_details: ApiResponse status=true",
+              "id": "b491c0d0622e61c6cab6536cf82d4f69",
+              "passes": 741
+            },
+            {
+              "name": "cart_add: status 200",
+              "path": "::Cart: Browse, Add, Read, Update & Remove::cart_add: status 200",
+              "id": "e5bf5e980dcc746077b9bbdb5600edc7",
+              "passes": 565,
+              "fails": 0
+            },
+            {
+              "passes": 565,
+              "fails": 0,
+              "name": "cart_add: ApiResponse status=true",
+              "path": "::Cart: Browse, Add, Read, Update & Remove::cart_add: ApiResponse status=true",
+              "id": "2c94ae2d7472e10ade0146897d19d1f9"
+            },
+            {
+              "name": "cart_get: status ok",
+              "path": "::Cart: Browse, Add, Read, Update & Remove::cart_get: status ok",
+              "id": "82ab9cb1a3563e1c1b988d95def7220e",
+              "passes": 565,
+              "fails": 0
+            },
+            {
+              "id": "a38cc34d48b902b67719aa306888b887",
+              "passes": 565,
+              "fails": 0,
+              "name": "cart_get: body non-empty",
+              "path": "::Cart: Browse, Add, Read, Update & Remove::cart_get: body non-empty"
+            },
+            {
+              "name": "cart_get: ApiResponse status=true",
+              "path": "::Cart: Browse, Add, Read, Update & Remove::cart_get: ApiResponse status=true",
+              "id": "392e5a25d079062a28c06b98ff185917",
+              "passes": 565,
+              "fails": 0
+            },
+            {
+              "name": "cart_update: status ok",
+              "path": "::Cart: Browse, Add, Read, Update & Remove::cart_update: status ok",
+              "id": "69591629139ada2b8e1157ff3fe99ec5",
+              "passes": 503,
+              "fails": 62
+            },
+            {
+              "name": "cart_update: body non-empty",
+              "path": "::Cart: Browse, Add, Read, Update & Remove::cart_update: body non-empty",
+              "id": "1e9ba8ffb606d3fe6b7d71a82f1a5f15",
+              "passes": 565,
+              "fails": 0
+            },
+            {
+              "id": "6d259f77304cde7abf6915561e9e4738",
+              "passes": 503,
+              "fails": 62,
+              "name": "cart_update: ApiResponse status=true",
+              "path": "::Cart: Browse, Add, Read, Update & Remove::cart_update: ApiResponse status=true"
+            },
+            {
+              "name": "cart_delete: status ok",
+              "path": "::Cart: Browse, Add, Read, Update & Remove::cart_delete: status ok",
+              "id": "99d9791020b722b2bc01be88f94a2f0b",
+              "passes": 565,
+              "fails": 0
+            },
+            {
+              "name": "cart_delete: body non-empty",
+              "path": "::Cart: Browse, Add, Read, Update & Remove::cart_delete: body non-empty",
+              "id": "7e25178c104a049ae6b1df791ccf5709",
+              "passes": 565,
+              "fails": 0
+            },
+            {
+              "fails": 0,
+              "name": "cart_delete: ApiResponse status=true",
+              "path": "::Cart: Browse, Add, Read, Update & Remove::cart_delete: ApiResponse status=true",
+              "id": "b751c3838935093ab8e176c8ecbf4a8c",
+              "passes": 565
+            },
+            {
+              "passes": 176,
+              "fails": 0,
+              "name": "cart_add: out-of-stock non-5xx",
+              "path": "::Cart: Browse, Add, Read, Update & Remove::cart_add: out-of-stock non-5xx",
+              "id": "ded0e2fae46d5e4f4edec33375b26e0d"
+            }
+          ],
+        "name": "Cart: Browse, Add, Read, Update & Remove"
+      },
+      {
+        "groups": [],
+        "checks": [
+            {
+              "name": "status is 2xx/3xx",
+              "path": "::Public: home::status is 2xx/3xx",
+              "id": "55a18fe3f52ddcb2394e3746365b9d46",
+              "passes": 125137,
+              "fails": 0
+            },
+            {
+              "name": "response body not empty",
+              "path": "::Public: home::response body not empty",
+              "id": "5601e3af0f3418bb8d8dbe58d0e7ab4e",
+              "passes": 125137,
+              "fails": 0
+            }
+          ],
+        "name": "Public: home",
+        "path": "::Public: home",
+        "id": "a4e91044dd0d4722cd885056ade0192a"
+      },
+      {
+        "path": "::Public: home_banners",
+        "id": "0994609c230a3e7125cb287a127209f5",
+        "groups": [],
+        "checks": [
+            {
+              "path": "::Public: home_banners::status is 2xx/3xx",
+              "id": "9f84ca888e42dd4d9f956ba2cc322c62",
+              "passes": 125137,
+              "fails": 0,
+              "name": "status is 2xx/3xx"
+            },
+            {
+              "name": "response body not empty",
+              "path": "::Public: home_banners::response body not empty",
+              "id": "51828613ead847a2d0491085d55d969e",
+              "passes": 125137,
+              "fails": 0
+            }
+          ],
+        "name": "Public: home_banners"
+      },
+      {
+        "name": "Public: home_categories",
+        "path": "::Public: home_categories",
+        "id": "a8d71c61877d64d0878645dd768b9e0c",
+        "groups": [],
+        "checks": [
+            {
+              "id": "d6ec7142859e202191f253649252be2f",
+              "passes": 125137,
+              "fails": 0,
+              "name": "status is 2xx/3xx",
+              "path": "::Public: home_categories::status is 2xx/3xx"
+            },
+            {
+              "name": "response body not empty",
+              "path": "::Public: home_categories::response body not empty",
+              "id": "33a69595c5318bf691a0eb319db61de9",
+              "passes": 125137,
+              "fails": 0
+            }
+          ]
+      },
+      {
+        "groups": [],
+        "checks": [
+            {
+              "id": "810ad6139a9d07443a5e3db8afa553c8",
+              "passes": 125137,
+              "fails": 0,
+              "name": "status is 2xx/3xx",
+              "path": "::Public: home_new_arrivals::status is 2xx/3xx"
             },
             {
               "fails": 0,
               "name": "response body not empty",
-              "path": "::Public: home_similar_vibes::response body not empty",
-              "id": "1b8cf6e1c6fcb616b713705ced8b4853",
-              "passes": 169187
+              "path": "::Public: home_new_arrivals::response body not empty",
+              "id": "511e07de7e8f672f14fa7df7d825abbb",
+              "passes": 125137
             }
           ],
-          "name": "Public: home_similar_vibes",
-          "path": "::Public: home_similar_vibes",
-          "id": "fcfeff8cc3437b339424222a47ef6a4f",
-          "groups": []
-        },
-        {
-          "checks": [
+        "name": "Public: home_new_arrivals",
+        "path": "::Public: home_new_arrivals",
+        "id": "c8b44dfe1a6110bd12f1102c4e80da36"
+      },
+      {
+        "name": "Public: home_best_sellers",
+        "path": "::Public: home_best_sellers",
+        "id": "40e1f40ac09cab53ae682b22db8e3367",
+        "groups": [],
+        "checks": [
+            {
+              "fails": 0,
+              "name": "status is 2xx/3xx",
+              "path": "::Public: home_best_sellers::status is 2xx/3xx",
+              "id": "f554564c3a79837fd5dd6d28b17141d1",
+              "passes": 125137
+            },
+            {
+              "name": "response body not empty",
+              "path": "::Public: home_best_sellers::response body not empty",
+              "id": "e1586011960eabab4545ba3447622d2b",
+              "passes": 125137,
+              "fails": 0
+            }
+          ]
+      },
+      {
+        "path": "::Public: home_recommended",
+        "id": "0561b0b25371d328a67b0a61b7b4a64b",
+        "groups": [],
+        "checks": [
+            {
+              "id": "a7bee35f28335b1eab17a48802edad5f",
+              "passes": 125137,
+              "fails": 0,
+              "name": "status is 2xx/3xx",
+              "path": "::Public: home_recommended::status is 2xx/3xx"
+            },
+            {
+              "id": "b59a8c126f9f5c9e2040961c85bf4422",
+              "passes": 125137,
+              "fails": 0,
+              "name": "response body not empty",
+              "path": "::Public: home_recommended::response body not empty"
+            }
+          ],
+        "name": "Public: home_recommended"
+      },
+      {
+        "id": "fcfeff8cc3437b339424222a47ef6a4f",
+        "groups": [],
+        "checks": [
+            {
+              "name": "status is 2xx/3xx",
+              "path": "::Public: home_similar_vibes::status is 2xx/3xx",
+              "id": "059d5636c6cbc4ec36cf5e1dd6b776b6",
+              "passes": 125137,
+              "fails": 0
+            },
+            {
+              "name": "response body not empty",
+              "path": "::Public: home_similar_vibes::response body not empty",
+              "id": "1b8cf6e1c6fcb616b713705ced8b4853",
+              "passes": 125137,
+              "fails": 0
+            }
+          ],
+        "name": "Public: home_similar_vibes",
+        "path": "::Public: home_similar_vibes"
+      },
+      {
+        "groups": [],
+        "checks": [
             {
               "name": "status is 2xx/3xx",
               "path": "::Public: home_explore::status is 2xx/3xx",
               "id": "102f8e72ce0c7b15b6238ba75af8a728",
-              "passes": 169187,
+              "passes": 125137,
               "fails": 0
             },
             {
-              "passes": 169187,
-              "fails": 0,
               "name": "response body not empty",
               "path": "::Public: home_explore::response body not empty",
-              "id": "84d73be83976a3f153fa2499958f2003"
+              "id": "84d73be83976a3f153fa2499958f2003",
+              "passes": 125137,
+              "fails": 0
             }
           ],
-          "name": "Public: home_explore",
-          "path": "::Public: home_explore",
-          "id": "a0cec542e917ea8f8b8ccf7f2eb2ba14",
-          "groups": []
-        },
-        {
-          "name": "Public: home_offers",
-          "path": "::Public: home_offers",
-          "id": "83ee625a7d0c5d66a3c91a7059769e4b",
-          "groups": [],
-          "checks": [
-              {
-                "fails": 0,
-                "name": "status is 2xx/3xx",
-                "path": "::Public: home_offers::status is 2xx/3xx",
-                "id": "d06c4db1faf08b59c4020a2f546759db",
-                "passes": 169187
-              },
-              {
-                "passes": 169187,
-                "fails": 0,
-                "name": "response body not empty",
-                "path": "::Public: home_offers::response body not empty",
-                "id": "0c925c8f041157d77d23446e25070883"
-              }
-            ]
-        },
-        {
-          "name": "Public: catalog_categories",
-          "path": "::Public: catalog_categories",
-          "id": "ebec79fa6d951710e6748ae37480030c",
-          "groups": [],
-          "checks": [
-              {
-                "name": "status is 2xx/3xx",
-                "path": "::Public: catalog_categories::status is 2xx/3xx",
-                "id": "63531670d3aaa888678dc125aafcc644",
-                "passes": 169187,
-                "fails": 0
-              },
-              {
-                "fails": 0,
-                "name": "response body not empty",
-                "path": "::Public: catalog_categories::response body not empty",
-                "id": "d7a08c09afc92906e226f03d431083d6",
-                "passes": 169187
-              }
-            ]
-        },
-        {
-          "name": "Public: catalog_search",
-          "path": "::Public: catalog_search",
-          "id": "9391055fa4bbb026a68a1412ae95202b",
-          "groups": [],
-          "checks": [
-              {
-                "id": "d208d6d4ad01565e004f651a71c0d308",
-                "passes": 169187,
-                "fails": 0,
-                "name": "status is 2xx/3xx",
-                "path": "::Public: catalog_search::status is 2xx/3xx"
-              },
-              {
-                "name": "response body not empty",
-                "path": "::Public: catalog_search::response body not empty",
-                "id": "54f0e730c470d986807eb7c234824aad",
-                "passes": 169187,
-                "fails": 0
-              }
-            ]
-        },
-        {
-          "groups": [],
-          "checks": [
-              {
-                "id": "88f34c73baa4e8e8e08f2d93ac7ee704",
-                "passes": 169187,
-                "fails": 0,
-                "name": "status is 2xx/3xx",
-                "path": "::Public: catalog_explore::status is 2xx/3xx"
-              },
-              {
-                "passes": 169187,
-                "fails": 0,
-                "name": "response body not empty",
-                "path": "::Public: catalog_explore::response body not empty",
-                "id": "511a9779e7e00be7b3e4a83d7324a002"
-              }
-            ],
-          "name": "Public: catalog_explore",
-          "path": "::Public: catalog_explore",
-          "id": "3aa4546a96a2a55b84c96f6e67295c0b"
-        },
-        {
-          "name": "Public: catalog_outfits",
-          "path": "::Public: catalog_outfits",
-          "id": "7916a29aaa7f0e8755df2bfbaabce9cc",
-          "groups": [],
-          "checks": [
-              {
-                "passes": 169187,
-                "fails": 0,
-                "name": "status is 2xx/3xx",
-                "path": "::Public: catalog_outfits::status is 2xx/3xx",
-                "id": "16ecb6a15b073356f35483be9964292f"
-              },
-              {
-                "id": "9058a05adf06c71225e423526e4c7edf",
-                "passes": 169187,
-                "fails": 0,
-                "name": "response body not empty",
-                "path": "::Public: catalog_outfits::response body not empty"
-              }
-            ]
-        },
-        {
-          "checks": [
+        "name": "Public: home_explore",
+        "path": "::Public: home_explore",
+        "id": "a0cec542e917ea8f8b8ccf7f2eb2ba14"
+      },
+      {
+        "name": "Public: home_offers",
+        "path": "::Public: home_offers",
+        "id": "83ee625a7d0c5d66a3c91a7059769e4b",
+        "groups": [],
+        "checks": [
+            {
+              "path": "::Public: home_offers::status is 2xx/3xx",
+              "id": "d06c4db1faf08b59c4020a2f546759db",
+              "passes": 125137,
+              "fails": 0,
+              "name": "status is 2xx/3xx"
+            },
+            {
+              "id": "0c925c8f041157d77d23446e25070883",
+              "passes": 125137,
+              "fails": 0,
+              "name": "response body not empty",
+              "path": "::Public: home_offers::response body not empty"
+            }
+          ]
+      },
+      {
+        "groups": [],
+        "checks": [
+            {
+              "fails": 0,
+              "name": "status is 2xx/3xx",
+              "path": "::Public: catalog_categories::status is 2xx/3xx",
+              "id": "63531670d3aaa888678dc125aafcc644",
+              "passes": 125137
+            },
+            {
+              "fails": 0,
+              "name": "response body not empty",
+              "path": "::Public: catalog_categories::response body not empty",
+              "id": "d7a08c09afc92906e226f03d431083d6",
+              "passes": 125137
+            }
+          ],
+        "name": "Public: catalog_categories",
+        "path": "::Public: catalog_categories",
+        "id": "ebec79fa6d951710e6748ae37480030c"
+      },
+      {
+        "name": "Public: catalog_search",
+        "path": "::Public: catalog_search",
+        "id": "9391055fa4bbb026a68a1412ae95202b",
+        "groups": [],
+        "checks": [
+            {
+              "name": "status is 2xx/3xx",
+              "path": "::Public: catalog_search::status is 2xx/3xx",
+              "id": "d208d6d4ad01565e004f651a71c0d308",
+              "passes": 125137,
+              "fails": 0
+            },
+            {
+              "name": "response body not empty",
+              "path": "::Public: catalog_search::response body not empty",
+              "id": "54f0e730c470d986807eb7c234824aad",
+              "passes": 125137,
+              "fails": 0
+            }
+          ]
+      },
+      {
+        "name": "Public: catalog_explore",
+        "path": "::Public: catalog_explore",
+        "id": "3aa4546a96a2a55b84c96f6e67295c0b",
+        "groups": [],
+        "checks": [
+            {
+              "id": "88f34c73baa4e8e8e08f2d93ac7ee704",
+              "passes": 125137,
+              "fails": 0,
+              "name": "status is 2xx/3xx",
+              "path": "::Public: catalog_explore::status is 2xx/3xx"
+            },
+            {
+              "name": "response body not empty",
+              "path": "::Public: catalog_explore::response body not empty",
+              "id": "511a9779e7e00be7b3e4a83d7324a002",
+              "passes": 125137,
+              "fails": 0
+            }
+          ]
+      },
+      {
+        "name": "Public: catalog_outfits",
+        "path": "::Public: catalog_outfits",
+        "id": "7916a29aaa7f0e8755df2bfbaabce9cc",
+        "groups": [],
+        "checks": [
+            {
+              "id": "16ecb6a15b073356f35483be9964292f",
+              "passes": 125137,
+              "fails": 0,
+              "name": "status is 2xx/3xx",
+              "path": "::Public: catalog_outfits::status is 2xx/3xx"
+            },
+            {
+              "name": "response body not empty",
+              "path": "::Public: catalog_outfits::response body not empty",
+              "id": "9058a05adf06c71225e423526e4c7edf",
+              "passes": 125137,
+              "fails": 0
+            }
+          ]
+      },
+      {
+        "groups": [],
+        "checks": [
             {
               "name": "status is 2xx/3xx",
               "path": "::Public: products::status is 2xx/3xx",
               "id": "fa99fff26af443f807693a647d7d6a46",
-              "passes": 169187,
+              "passes": 125137,
               "fails": 0
             },
             {
-              "passes": 169187,
+              "id": "bbbc98b24a99d2116868d70474570314",
+              "passes": 125137,
               "fails": 0,
               "name": "response body not empty",
-              "path": "::Public: products::response body not empty",
-              "id": "bbbc98b24a99d2116868d70474570314"
+              "path": "::Public: products::response body not empty"
             }
           ],
-          "name": "Public: products",
-          "path": "::Public: products",
-          "id": "8c2afd2d257000a3715003f2301312e5",
-          "groups": []
-        }
-      ]
+        "name": "Public: products",
+        "path": "::Public: products",
+        "id": "8c2afd2d257000a3715003f2301312e5"
+      }
+    ],
+    "checks": [
+      {
+        "name": "auth register ok or conflict",
+        "path": "::auth register ok or conflict",
+        "id": "d00e17b5ee60ee7dd66cad58e4637e96",
+        "passes": 45,
+        "fails": 0
+      },
+      {
+        "id": "6d03eaaf19ec176ae2e8e6910ad93a83",
+        "passes": 45,
+        "fails": 0,
+        "name": "auth login status 200",
+        "path": "::auth login status 200"
+      },
+      {
+        "passes": 45,
+        "fails": 0,
+        "name": "auth login issued JWT token",
+        "path": "::auth login issued JWT token",
+        "id": "2bb06f27a3a1d08df483df52da13f7e0"
+      }
+    ],
+    "name": "",
+    "path": ""
   },
   "options": {
     "summaryTrendStats": [
@@ -382,530 +885,773 @@
     "noColor": false
   },
   "state": {
+    "testRunDurationMs": 484023.9192,
     "isStdOutTTY": true,
-    "isStdErrTTY": true,
-    "testRunDurationMs": 480015.6022
+    "isStdErrTTY": true
   },
   "metrics": {
-    "ep_products_duration": {
+    "ep_home_explore_duration": {
       "type": "trend",
       "contains": "time",
       "values": {
-        "p(90)": 16.54242,
-        "p(95)": 21.146069999999998,
-        "p(99)": 35.00860799999989,
-        "count": 169187,
-        "avg": 7.660736930142544,
+        "p(99)": 54.2468,
+        "count": 125137,
+        "avg": 10.98552416311723,
         "min": 0,
-        "med": 5.389,
-        "max": 479.449
+        "med": 8.1536,
+        "max": 653.292,
+        "p(90)": 22.526880000000006,
+        "p(95)": 29.94061999999999
       }
     },
-    "http_req_connecting": {
-      "type": "trend",
-      "contains": "time",
+    "http_req_sending": {
       "values": {
-        "count": 2753583,
-        "avg": 0.000196213188416692,
-        "min": 0,
-        "med": 0,
-        "max": 31.1473,
+        "max": 367.9613,
         "p(90)": 0,
         "p(95)": 0,
-        "p(99)": 0
-      }
-    },
-    "http_req_tls_handshaking": {
-      "type": "trend",
-      "contains": "time",
-      "values": {
-        "avg": 0,
+        "p(99)": 1.6589,
+        "count": 2109867,
+        "avg": 0.07402154386982676,
         "min": 0,
-        "med": 0,
-        "max": 0,
-        "p(90)": 0,
-        "p(95)": 0,
-        "p(99)": 0,
-        "count": 2753583
-      }
-    },
-    "http_req_receiving": {
-      "values": {
-        "min": 0,
-        "med": 0,
-        "max": 307.5734,
-        "p(90)": 0.5374,
-        "p(95)": 1.7997,
-        "p(99)": 8.505118000000017,
-        "count": 2753583,
-        "avg": 0.36204170718660694
+        "med": 0
       },
       "type": "trend",
       "contains": "time"
-    },
-    "ep_catalog_categories_duration": {
-      "type": "trend",
-      "contains": "time",
-      "values": {
-        "avg": 6.850631419671685,
-        "min": 0,
-        "med": 4.7935,
-        "max": 692.2279,
-        "p(90)": 15.028579999999991,
-        "p(95)": 19.152059999999985,
-        "p(99)": 30.726451999999973,
-        "count": 169187
-      }
-    },
-    "http_req_duration": {
-      "type": "trend",
-      "contains": "time",
-      "values": {
-        "max": 2930.6278,
-        "p(90)": 23.2816,
-        "p(95)": 42.45366999999997,
-        "p(99)": 129.5464,
-        "count": 2753583,
-        "avg": 12.703895860085012,
-        "min": 0,
-        "med": 6.0343
-      },
-      "thresholds": {
-        "p(95)<1500": {
-          "ok": true
-        }
-      }
-    },
-    "koodi_req_duration": {
-      "thresholds": {
-        "p(95)<1500": {
-          "ok": true
-        }
-      },
-      "type": "trend",
-      "contains": "time",
-      "values": {
-        "p(90)": 23.2816,
-        "p(95)": 42.45366999999997,
-        "p(99)": 129.5464,
-        "count": 2753583,
-        "avg": 12.703895860085014,
-        "min": 0,
-        "med": 6.0343,
-        "max": 2930.6278
-      }
-    },
-    "http_req_duration{expected_response:true}": {
-      "type": "trend",
-      "contains": "time",
-      "values": {
-        "max": 2930.6278,
-        "p(90)": 22.7342,
-        "p(95)": 40.1193,
-        "p(99)": 121.99300000000024,
-        "count": 2742641,
-        "avg": 12.293486388266611,
-        "min": 0,
-        "med": 6.0194
-      }
-    },
-    "http_req_blocked": {
-      "contains": "time",
-      "values": {
-        "count": 2753583,
-        "avg": 0.007626935051531052,
-        "min": 0,
-        "med": 0,
-        "max": 134.1709,
-        "p(90)": 0,
-        "p(95)": 0,
-        "p(99)": 0
-      },
-      "type": "trend"
-    },
-    "http_req_sending": {
-      "type": "trend",
-      "contains": "time",
-      "values": {
-        "p(95)": 0,
-        "p(99)": 0.9988,
-        "count": 2753583,
-        "avg": 0.03561662426736329,
-        "min": 0,
-        "med": 0,
-        "max": 294.8169,
-        "p(90)": 0
-      }
-    },
-    "koodi_active_vus": {
-      "contains": "default",
-      "values": {
-        "value": 24,
-        "min": 1,
-        "max": 175
-      },
-      "type": "gauge"
-    },
-    "ep_home_categories_duration": {
-      "type": "trend",
-      "contains": "time",
-      "values": {
-        "avg": 7.049871715320785,
-        "min": 0,
-        "med": 5.0298,
-        "max": 240.9542,
-        "p(90)": 15.622799999999998,
-        "p(95)": 19.793839999999996,
-        "p(99)": 31.0340519999999,
-        "count": 169187
-      }
-    },
-    "ep_auth_login_duration": {
-      "contains": "time",
-      "values": {
-        "med": 18.6058,
-        "max": 831.1186,
-        "p(90)": 78.96152,
-        "p(95)": 112.62577999999999,
-        "p(99)": 197.3296719999996,
-        "count": 107889,
-        "avg": 33.22231678577039,
-        "min": 0
-      },
-      "type": "trend"
     },
     "ep_home_banners_duration": {
       "type": "trend",
       "contains": "time",
       "values": {
-        "p(99)": 31.43015799999993,
-        "count": 169187,
-        "avg": 7.248642437657623,
+        "p(95)": 30.2858,
+        "p(99)": 52.29549999999999,
+        "count": 125137,
+        "avg": 10.865217769324568,
         "min": 0,
-        "med": 5.1568,
-        "max": 450.9966,
-        "p(90)": 15.903659999999997,
-        "p(95)": 20.135089999999987
+        "med": 8.061,
+        "max": 408.5138,
+        "p(90)": 22.815240000000006
       }
     },
-    "ep_health_duration": {
+    "ep_catalog_search_duration": {
       "type": "trend",
       "contains": "time",
       "values": {
-        "max": 1056.2907,
-        "p(90)": 97.76163999999996,
-        "p(95)": 135.87613999999982,
-        "p(99)": 231.04485399999885,
-        "count": 169187,
-        "avg": 37.87858617151408,
+        "avg": 11.856633285918623,
         "min": 0,
-        "med": 19.0711
-      }
-    },
-    "ep_home_explore_duration": {
-      "contains": "time",
-      "values": {
-        "max": 357.847,
-        "p(90)": 15.135679999999999,
-        "p(95)": 19.285469999999997,
-        "p(99)": 30.81544599999994,
-        "count": 169187,
-        "avg": 6.9190198324928245,
-        "min": 0,
-        "med": 4.9138
-      },
-      "type": "trend"
-    },
-    "http_reqs": {
-      "type": "counter",
-      "contains": "default",
-      "values": {
-        "count": 2753583,
-        "rate": 5736.444789252311
-      }
-    },
-    "data_sent": {
-      "type": "counter",
-      "contains": "data",
-      "values": {
-        "count": 391050827,
-        "rate": 814662.7426436598
-      }
-    },
-    "ep_home_new_arrivals_duration": {
-      "type": "trend",
-      "contains": "time",
-      "values": {
-        "med": 5.2108,
-        "max": 355.4367,
-        "p(90)": 15.8034,
-        "p(95)": 20.098949999999956,
-        "p(99)": 32.24341799999994,
-        "count": 169187,
-        "avg": 7.315070859462973,
-        "min": 0
-      }
-    },
-    "koodi_success_rate": {
-      "thresholds": {
-        "rate>0.95": {
-          "ok": true
-        }
-      },
-      "type": "rate",
-      "contains": "default",
-      "values": {
-        "rate": 1,
-        "passes": 2753583,
-        "fails": 0
-      }
-    },
-    "ep_catalog_explore_duration": {
-      "type": "trend",
-      "contains": "time",
-      "values": {
-        "p(95)": 19.792879999999993,
-        "p(99)": 31.697739999999985,
-        "count": 169187,
-        "avg": 7.074042062333268,
-        "min": 0,
-        "med": 4.979,
-        "max": 690.9305,
-        "p(90)": 15.4906
-      }
-    },
-    "koodi_total_requests": {
-      "type": "counter",
-      "contains": "default",
-      "values": {
-        "count": 2753583,
-        "rate": 5736.444789252311
+        "med": 8.2703,
+        "max": 405.0806,
+        "p(90)": 23.756820000000012,
+        "p(95)": 32.70214,
+        "p(99)": 74.061204,
+        "count": 125137
       }
     },
     "vus_max": {
       "type": "gauge",
       "contains": "default",
       "values": {
-        "value": 175,
-        "min": 175,
-        "max": 175
+        "value": 205,
+        "min": 205,
+        "max": 205
       }
     },
-    "checks": {
+    "koodi_active_vus": {
+      "type": "gauge",
+      "contains": "default",
       "values": {
-        "rate": 1,
-        "passes": 5291388,
-        "fails": 0
+        "value": 5,
+        "min": 1,
+        "max": 205
+      }
+    },
+    "ep_product_details_duration": {
+      "values": {
+        "count": 951,
+        "avg": 48.07084647739224,
+        "min": 2.9088,
+        "med": 35.3048,
+        "max": 1069.0017,
+        "p(90)": 90.4334,
+        "p(95)": 114.77584999999999,
+        "p(99)": 216.26170000000002
       },
-      "type": "rate",
-      "contains": "default"
+      "type": "trend",
+      "contains": "time"
+    },
+    "koodi_out_of_stock_count": {
+      "type": "counter",
+      "contains": "default",
+      "values": {
+        "count": 223,
+        "rate": 0.46072103289559907
+      }
+    },
+    "http_req_tls_handshaking": {
+      "type": "trend",
+      "contains": "time",
+      "values": {
+        "p(99)": 0,
+        "count": 2109867,
+        "avg": 0,
+        "min": 0,
+        "med": 0,
+        "max": 0,
+        "p(90)": 0,
+        "p(95)": 0
+      }
     },
     "http_req_waiting": {
       "type": "trend",
       "contains": "time",
       "values": {
-        "med": 5.7344,
-        "max": 2926.0636,
-        "p(90)": 22.185260000000056,
-        "p(95)": 41.2807,
-        "p(99)": 128.8403080000001,
-        "count": 2753583,
-        "avg": 12.306237528632623,
+        "p(95)": 33.763369999999995,
+        "p(99)": 74.43858400000022,
+        "count": 2109867,
+        "avg": 12.528747501429358,
+        "min": 0,
+        "med": 8.6919,
+        "max": 2030.3811,
+        "p(90)": 24.6173
+      }
+    },
+    "ep_catalog_categories_duration": {
+      "type": "trend",
+      "contains": "time",
+      "values": {
+        "med": 8.0326,
+        "max": 626.4936,
+        "p(90)": 21.684460000000005,
+        "p(95)": 28.568859999999994,
+        "p(99)": 48.601355999999996,
+        "count": 125137,
+        "avg": 10.498836540751103,
         "min": 0
       }
     },
-    "ep_home_best_sellers_duration": {
-      "type": "trend",
-      "contains": "time",
-      "values": {
-        "min": 0,
-        "med": 5.2138,
-        "max": 354.2522,
-        "p(90)": 15.871579999999991,
-        "p(95)": 20.358569999999997,
-        "p(99)": 33.42645199999967,
-        "count": 169187,
-        "avg": 7.3970646627695285
-      }
-    },
-    "ep_catalog_outfits_duration": {
-      "type": "trend",
-      "contains": "time",
-      "values": {
-        "p(95)": 19.83396999999998,
-        "p(99)": 31.210437999999975,
-        "count": 169187,
-        "avg": 6.977062380088329,
-        "min": 0,
-        "med": 4.8718,
-        "max": 690.9305,
-        "p(90)": 15.526059999999996
-      }
-    },
-    "vus": {
-      "type": "gauge",
+    "iterations": {
+      "type": "counter",
       "contains": "default",
       "values": {
-        "value": 1,
-        "min": 1,
-        "max": 174
+        "count": 240210,
+        "rate": 496.2771269589769
       }
+    },
+    "http_req_duration{scenario:cart_load}": {
+      "contains": "time",
+      "values": {
+        "count": 3237,
+        "avg": 54.61782628977457,
+        "min": 0.5616,
+        "med": 39.1466,
+        "max": 1069.0017,
+        "p(90)": 106.31768000000001,
+        "p(95)": 144.13251999999994,
+        "p(99)": 259.36645199999987
+      },
+      "thresholds": {
+        "p(95)<1200": {
+          "ok": true
+        }
+      },
+      "type": "trend"
+    },
+    "ep_checkout_calculate_duration": {
+      "type": "trend",
+      "contains": "time",
+      "values": {
+        "p(90)": 84.96642,
+        "p(95)": 118.70034499999996,
+        "p(99)": 189.31348300000025,
+        "count": 164,
+        "avg": 48.98592073170732,
+        "min": 6.0973,
+        "med": 35.6506,
+        "max": 561.897
+      }
+    },
+    "ep_cart_update_errors": {
+      "type": "counter",
+      "contains": "default",
+      "values": {
+        "count": 62,
+        "rate": 0.12809284322657913
+      }
+    },
+    "group_duration": {
+      "values": {
+        "min": 0,
+        "med": 10.0784,
+        "max": 15556.7602,
+        "p(90)": 28.8898,
+        "p(95)": 40.550474999999906,
+        "p(99)": 90.09095900000001,
+        "count": 2106250,
+        "avg": 17.326232817805558
+      },
+      "type": "trend",
+      "contains": "time"
+    },
+    "ep_cart_delete_duration": {
+      "type": "trend",
+      "contains": "time",
+      "values": {
+        "count": 565,
+        "avg": 39.59618318584072,
+        "min": 0.5616,
+        "med": 27.738,
+        "max": 373.1873,
+        "p(90)": 85.84,
+        "p(95)": 103.99879999999986,
+        "p(99)": 181.93528800000033
+      }
+    },
+    "koodi_success_rate": {
+      "type": "rate",
+      "contains": "default",
+      "values": {
+        "rate": 0.9999706140386216,
+        "passes": 2109789,
+        "fails": 62
+      },
+      "thresholds": {
+        "rate>0.95": {
+          "ok": true
+        }
+      }
+    },
+    "koodi_req_duration": {
+      "values": {
+        "min": 0,
+        "med": 9.0914,
+        "max": 2030.3811,
+        "p(90)": 25.82,
+        "p(95)": 35.5649,
+        "p(99)": 78.31899999999999,
+        "count": 2109851,
+        "avg": 13.136606713791291
+      },
+      "thresholds": {
+        "p(95)<1500": {
+          "ok": true
+        }
+      },
+      "type": "trend",
+      "contains": "time"
+    },
+    "ep_home_offers_duration": {
+      "contains": "time",
+      "values": {
+        "p(99)": 47.983875999999995,
+        "count": 125137,
+        "avg": 10.352167846440254,
+        "min": 0,
+        "med": 7.989,
+        "max": 301.8704,
+        "p(90)": 21.524620000000006,
+        "p(95)": 28.37091999999999
+      },
+      "type": "trend"
+    },
+    "koodi_cart_success_rate": {
+      "type": "rate",
+      "contains": "default",
+      "values": {
+        "rate": 0.9163292847503374,
+        "passes": 679,
+        "fails": 62
+      },
+      "thresholds": {
+        "rate>0.95": {
+          "ok": false
+        }
+      }
+    },
+    "ep_home_duration": {
+      "values": {
+        "avg": 25.704238689596156,
+        "min": 0,
+        "med": 11.9123,
+        "max": 1992.9875,
+        "p(90)": 48.73462000000001,
+        "p(95)": 106.45931999999999,
+        "p(99)": 247.582568,
+        "count": 125137
+      },
+      "type": "trend",
+      "contains": "time"
+    },
+    "vus": {
+      "contains": "default",
+      "values": {
+        "min": 0,
+        "max": 204,
+        "value": 1
+      },
+      "type": "gauge"
+    },
+    "http_req_duration{expected_response:true}": {
+      "type": "trend",
+      "contains": "time",
+      "values": {
+        "med": 9.08955,
+        "max": 2030.3811,
+        "p(90)": 25.8094,
+        "p(95)": 35.540395,
+        "p(99)": 78.18080099999956,
+        "count": 2109582,
+        "avg": 13.130625874224963,
+        "min": 0
+      }
+    },
+    "http_req_blocked": {
+      "contains": "time",
+      "values": {
+        "p(99)": 0,
+        "count": 2109867,
+        "avg": 0.015317648600598949,
+        "min": 0,
+        "med": 0,
+        "max": 214.7313,
+        "p(90)": 0,
+        "p(95)": 0
+      },
+      "type": "trend"
     },
     "koodi_ttfb": {
       "type": "trend",
       "contains": "time",
       "values": {
-        "med": 5.7344,
-        "max": 2926.0636,
-        "p(90)": 22.185260000000056,
-        "p(95)": 41.2807,
-        "p(99)": 128.8403080000001,
-        "count": 2753583,
-        "avg": 12.30623752863262,
-        "min": 0
+        "p(99)": 74.43735000000001,
+        "count": 2109851,
+        "avg": 12.528378334535615,
+        "min": 0,
+        "med": 8.6919,
+        "max": 2030.3811,
+        "p(90)": 24.6168,
+        "p(95)": 33.7632
       }
     },
-    "http_req_failed": {
-      "type": "rate",
-      "contains": "default",
-      "values": {
-        "passes": 10942,
-        "fails": 2742641,
-        "rate": 0.003973731679778674
-      },
-      "thresholds": {
-        "rate<0.05": {
-          "ok": true
-        }
-      }
-    },
-    "ep_home_recommended_duration": {
+    "ep_cart_add_duration": {
       "type": "trend",
       "contains": "time",
       "values": {
-        "p(95)": 20.16521999999999,
-        "p(99)": 33.28824999999996,
-        "count": 169187,
-        "avg": 7.352632350594333,
+        "med": 49.9925,
+        "max": 902.9492,
+        "p(90)": 128.949,
+        "p(95)": 169.2534,
+        "p(99)": 304.24485,
+        "count": 951,
+        "avg": 68.33777697160882,
+        "min": 6.0519
+      }
+    },
+    "koodi_total_requests": {
+      "type": "counter",
+      "contains": "default",
+      "values": {
+        "rate": 4358.980860878083,
+        "count": 2109851
+      }
+    },
+    "iteration_duration": {
+      "type": "trend",
+      "contains": "time",
+      "values": {
+        "min": 2.5617,
+        "med": 66.0343,
+        "max": 19748.8523,
+        "p(90)": 326.41666000000004,
+        "p(95)": 427.087425,
+        "p(99)": 686.3209640000002,
+        "count": 240210,
+        "avg": 162.15599454476768
+      }
+    },
+    "http_reqs": {
+      "type": "counter",
+      "contains": "default",
+      "values": {
+        "count": 2109867,
+        "rate": 4359.01391709569
+      }
+    },
+    "ep_cart_clear_duration": {
+      "type": "trend",
+      "contains": "time",
+      "values": {
+        "avg": 35.92140809523807,
+        "min": 1.0208,
+        "med": 24.8926,
+        "max": 180.2969,
+        "p(90)": 75.89167999999998,
+        "p(95)": 101.74391499999997,
+        "p(99)": 138.432129,
+        "count": 210
+      }
+    },
+    "http_req_connecting": {
+      "type": "trend",
+      "contains": "time",
+      "values": {
+        "med": 0,
+        "max": 163.6583,
+        "p(90)": 0,
+        "p(95)": 0,
+        "p(99)": 0,
+        "count": 2109867,
+        "avg": 0.0009713568201218367,
+        "min": 0
+      }
+    },
+    "ep_home_categories_duration": {
+      "type": "trend",
+      "contains": "time",
+      "values": {
         "min": 0,
-        "med": 5.2001,
-        "max": 250.5116,
-        "p(90)": 15.811699999999997
+        "med": 8.0441,
+        "max": 936.6802,
+        "p(90)": 22.35572000000002,
+        "p(95)": 29.651539999999997,
+        "p(99)": 50.66996399999999,
+        "count": 125137,
+        "avg": 10.681170413226994
+      }
+    },
+    "koodi_error_count": {
+      "type": "counter",
+      "contains": "default",
+      "values": {
+        "count": 62,
+        "rate": 0.12809284322657913
       }
     },
     "ep_home_similar_vibes_duration": {
       "type": "trend",
       "contains": "time",
       "values": {
-        "med": 4.9961,
-        "max": 691.0752,
-        "p(90)": 15.3045,
-        "p(95)": 19.41127,
-        "p(99)": 31.325981999999904,
-        "count": 169187,
-        "avg": 7.026752827935779,
-        "min": 0
+        "min": 0,
+        "med": 8.2967,
+        "max": 386.8314,
+        "p(90)": 23.511180000000014,
+        "p(95)": 32.26205999999999,
+        "p(99)": 61.35285199999997,
+        "count": 125137,
+        "avg": 11.48950983162444
       }
     },
-    "group_duration": {
+    "ep_home_recommended_duration": {
       "type": "trend",
       "contains": "time",
       "values": {
-        "p(90)": 25.1779,
-        "p(95)": 45.24108999999999,
-        "p(99)": 131.12478000000016,
-        "count": 2753583,
-        "avg": 13.450300730321453,
+        "p(90)": 24.51240000000002,
+        "p(95)": 33.21564,
+        "p(99)": 67.34319999999998,
+        "count": 125137,
+        "avg": 12.034827375596434,
         "min": 0,
-        "med": 6.3992,
-        "max": 2930.6278
+        "med": 8.5789,
+        "max": 788.8041
+      }
+    },
+    "ep_catalog_outfits_duration": {
+      "values": {
+        "p(95)": 29.242739999999994,
+        "p(99)": 50.43388399999999,
+        "count": 125137,
+        "avg": 10.588719034338293,
+        "min": 0,
+        "med": 8.0054,
+        "max": 816.8931,
+        "p(90)": 22.137620000000013
+      },
+      "type": "trend",
+      "contains": "time"
+    },
+    "ep_auth_register_duration": {
+      "contains": "time",
+      "values": {
+        "p(90)": 35.485760000000035,
+        "p(95)": 48.104909999999975,
+        "p(99)": 84.55268199999993,
+        "count": 114167,
+        "avg": 19.135621969570582,
+        "min": 1.1732,
+        "med": 14.3462,
+        "max": 631.8719
+      },
+      "type": "trend"
+    },
+    "ep_home_best_sellers_duration": {
+      "type": "trend",
+      "contains": "time",
+      "values": {
+        "p(95)": 33.44567999999999,
+        "p(99)": 67.4372,
+        "count": 125137,
+        "avg": 12.095265769516567,
+        "min": 0,
+        "med": 8.6,
+        "max": 376.1774,
+        "p(90)": 24.74972000000001
+      }
+    },
+    "http_req_duration{scenario:checkout_load}": {
+      "type": "trend",
+      "contains": "time",
+      "values": {
+        "avg": 66.09307809885932,
+        "min": 1.0208,
+        "med": 41.2255,
+        "max": 2030.3811,
+        "p(90)": 137.14952000000005,
+        "p(95)": 186.65735999999987,
+        "p(99)": 383.6798459999984,
+        "count": 1315
+      },
+      "thresholds": {
+        "p(95)<2000": {
+          "ok": true
+        }
+      }
+    },
+    "ep_health_duration": {
+      "type": "trend",
+      "contains": "time",
+      "values": {
+        "max": 434.4735,
+        "p(90)": 29.966620000000002,
+        "p(95)": 40.66944,
+        "p(99)": 76.38152399999998,
+        "count": 125137,
+        "avg": 14.355974106778936,
+        "min": 0,
+        "med": 10.2018
+      }
+    },
+    "data_sent": {
+      "type": "counter",
+      "contains": "data",
+      "values": {
+        "rate": 641325.5372029142,
+        "count": 310416900
+      }
+    },
+    "ep_auth_login_duration": {
+      "type": "trend",
+      "contains": "time",
+      "values": {
+        "max": 503.9789,
+        "p(90)": 26.980940000000036,
+        "p(95)": 35.61731,
+        "p(99)": 62.51458199999988,
+        "count": 114167,
+        "avg": 14.482606403777009,
+        "min": 0,
+        "med": 11.1479
+      }
+    },
+    "ep_checkout_create_duration": {
+      "contains": "time",
+      "values": {
+        "max": 2030.3811,
+        "p(90)": 297.41362000000004,
+        "p(95)": 365.95655999999985,
+        "p(99)": 875.7479890000031,
+        "count": 164,
+        "avg": 183.86548780487803,
+        "min": 18.2195,
+        "med": 142.53465
+      },
+      "type": "trend"
+    },
+    "http_req_duration": {
+      "thresholds": {
+        "p(95)<1500": {
+          "ok": true
+        }
+      },
+      "type": "trend",
+      "contains": "time",
+      "values": {
+        "p(90)": 25.8202,
+        "p(95)": 35.565849999999976,
+        "p(99)": 78.32472800000035,
+        "count": 2109867,
+        "avg": 13.136974744474065,
+        "min": 0,
+        "med": 9.0915,
+        "max": 2030.3811
+      }
+    },
+    "ep_cart_get_duration": {
+      "type": "trend",
+      "contains": "time",
+      "values": {
+        "p(99)": 186.66204800000023,
+        "count": 729,
+        "avg": 45.141337448559725,
+        "min": 1.0346,
+        "med": 33.4396,
+        "max": 365.2028,
+        "p(90)": 84.30052,
+        "p(95)": 107.92752000000003
+      }
+    },
+    "ep_order_details_duration": {
+      "type": "trend",
+      "contains": "time",
+      "values": {
+        "min": 4.5854,
+        "med": 47.8427,
+        "max": 652.2211,
+        "p(90)": 116.32768,
+        "p(95)": 141.99335000000002,
+        "p(99)": 224.212864,
+        "count": 163,
+        "avg": 61.733741717791396
+      }
+    },
+    "ep_home_new_arrivals_duration": {
+      "type": "trend",
+      "contains": "time",
+      "values": {
+        "p(99)": 64.020504,
+        "count": 125137,
+        "avg": 11.984244892397966,
+        "min": 0,
+        "med": 8.6219,
+        "max": 461.273,
+        "p(90)": 24.702120000000026,
+        "p(95)": 33.60817999999999
+      }
+    },
+    "http_req_failed": {
+      "values": {
+        "passes": 285,
+        "fails": 2109582,
+        "rate": 0.00013507960454379352
+      },
+      "thresholds": {
+        "rate<0.05": {
+          "ok": true
+        }
+      },
+      "type": "rate",
+      "contains": "default"
+    },
+    "ep_catalog_explore_duration": {
+      "type": "trend",
+      "contains": "time",
+      "values": {
+        "max": 448.2864,
+        "p(90)": 23.449520000000007,
+        "p(95)": 32.083619999999996,
+        "p(99)": 66.4024,
+        "count": 125137,
+        "avg": 11.619245912080208,
+        "min": 0,
+        "med": 8.0964
+      }
+    },
+    "http_req_receiving": {
+      "type": "trend",
+      "contains": "time",
+      "values": {
+        "avg": 0.534205699174406,
+        "min": 0,
+        "med": 0,
+        "max": 775.9231,
+        "p(90)": 0.9851,
+        "p(95)": 2.0122,
+        "p(99)": 12.717870000000042,
+        "count": 2109867
+      }
+    },
+    "checks": {
+      "values": {
+        "rate": 0.9999689588705034,
+        "passes": 3994576,
+        "fails": 124
+      },
+      "type": "rate",
+      "contains": "default"
+    },
+    "ep_products_duration": {
+      "type": "trend",
+      "contains": "time",
+      "values": {
+        "min": 0,
+        "med": 8.9507,
+        "max": 793.7589,
+        "p(90)": 26.092240000000004,
+        "p(95)": 37.24385999999998,
+        "p(99)": 109.03512399999994,
+        "count": 125137,
+        "avg": 13.618697629797637
+      }
+    },
+    "ep_cart_update_duration": {
+      "values": {
+        "min": 4.5783,
+        "med": 48.7789,
+        "max": 703.8523,
+        "p(90)": 139.46938000000006,
+        "p(95)": 190.42175999999978,
+        "p(99)": 286.0992480000003,
+        "count": 565,
+        "avg": 69.50818053097352
+      },
+      "type": "trend",
+      "contains": "time"
+    },
+    "http_req_duration{scenario:public_load}": {
+      "values": {
+        "p(99)": 76.6609,
+        "count": 1877055,
+        "avg": 12.582018217366349,
+        "min": 0,
+        "med": 8.579,
+        "max": 1992.9875,
+        "p(90)": 24.803760000000008,
+        "p(95)": 34.18992999999998
+      },
+      "thresholds": {
+        "p(95)<1500": {
+          "ok": true
+        }
+      },
+      "type": "trend",
+      "contains": "time"
+    },
+    "koodi_checkout_success_rate": {
+      "values": {
+        "passes": 210,
+        "fails": 0,
+        "rate": 1
+      },
+      "thresholds": {
+        "rate>0.95": {
+          "ok": true
+        }
+      },
+      "type": "rate",
+      "contains": "default"
+    },
+    "koodi_orders_created": {
+      "type": "counter",
+      "contains": "default",
+      "values": {
+        "count": 163,
+        "rate": 0.33676021686987734
       }
     },
     "data_received": {
-      "contains": "data",
       "values": {
-        "count": 39319658253,
-        "rate": 81913292.13631965
-      },
-      "type": "counter"
-    },
-    "iteration_duration": {
-      "values": {
-        "p(95)": 332.11005,
-        "p(99)": 460.28315,
-        "count": 277076,
-        "avg": 134.17044799874293,
-        "min": 2.9836,
-        "med": 102.68565,
-        "max": 7571.9553,
-        "p(90)": 276.22105
-      },
-      "type": "trend",
-      "contains": "time"
-    },
-    "iterations": {
-      "values": {
-        "rate": 577.2229042766727,
-        "count": 277076
+        "count": 25655371627,
+        "rate": 53004346.705434464
       },
       "type": "counter",
-      "contains": "default"
-    },
-    "ep_home_duration": {
-      "type": "trend",
-      "contains": "time",
-      "values": {
-        "p(95)": 30.3259,
-        "p(99)": 47.392777999999964,
-        "count": 169187,
-        "avg": 10.696020027543316,
-        "min": 0,
-        "med": 7.3033,
-        "max": 2930.6278,
-        "p(90)": 23.352639999999997
-      }
-    },
-    "ep_home_offers_duration": {
-      "type": "trend",
-      "contains": "time",
-      "values": {
-        "p(95)": 19.005709999999997,
-        "p(99)": 30.394825999999988,
-        "count": 169187,
-        "avg": 6.752652181314248,
-        "min": 0,
-        "med": 4.7416,
-        "max": 453.2201,
-        "p(90)": 14.873819999999998
-      }
-    },
-    "ep_auth_register_duration": {
-      "values": {
-        "med": 39.1072,
-        "max": 1310.1331,
-        "p(90)": 144.81525999999997,
-        "p(95)": 194.73425999999978,
-        "p(99)": 322.9031879999997,
-        "count": 107889,
-        "avg": 62.33571816867439,
-        "min": 0
-      },
-      "type": "trend",
-      "contains": "time"
-    },
-    "ep_catalog_search_duration": {
-      "values": {
-        "min": 0,
-        "med": 4.9845,
-        "max": 2396.0896,
-        "p(90)": 15.434459999999998,
-        "p(95)": 19.732749999999992,
-        "p(99)": 33.13324399999978,
-        "count": 169187,
-        "avg": 11.625484569145268
-      },
-      "type": "trend",
-      "contains": "time"
+      "contains": "data"
     }
   }
 }
