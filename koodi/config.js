@@ -116,15 +116,15 @@ export const ALL_ENDPOINTS = [
 // Main load profile: up to 150 public VUs
 export const PUBLIC_LOAD_STAGES = [
   { duration: '30s', target: 15 }, // Warm up to 15 VUs
-  { duration: '1m', target: 35 },  // Ramp up to 35 VUs
-  { duration: '2m', target: 50 },  // Peak load at 50 VUs
-  { duration: '2m', target: 50 },  // Hold 50 VUs
+  { duration: '12m', target: 35 },  // Ramp up to 35 VUs
+  { duration: '25m', target: 50 },  // Peak load at 50 VUs
+  { duration: '25m', target: 50 },  // Hold 50 VUs
   // { duration: '1m', target: 100 },
   // { duration: '1m', target: 150 },
   // { duration: '6m', target: 175 },
   // { duration: '3m', target: 200 },
   // { duration: '5m', target: 250 },
-  { duration: '1m', target: 10 },
+  { duration: '12m', target: 10 },
   { duration: '30s', target: 0 },  // Ramp down to 0 VUs
 ];
 
